@@ -9,23 +9,36 @@
             <div class="header-content">
                 <div class="user-actions">
                     <div class="main-logo">
-                        <a href="index.html" name="logo"> ТЕХНОМАРТ</a>
+                        <a href="index.html" name="logo">
+                            <img src="img/logo-technomart.svg" alt="Техномарт">
+                        </a>
                     </div>
+                    <label for="search">
+                        <img src="img/icon-search.svg" alt="поиск">Поиск:
+                    </label>
                     <input type="text" name="search" class="search">
-                    <a href="#" class="market">Закладки:</a>
-                    <a href="#" class="basket">Корзина:</a>
+                    <a href="#" class="market">
+                        <img src="img/icon-bookmark.svg" alt="закладки">Закладки:
+                    </a>
+                    <a href="#" class="basket">
+                        <img src="img/icon-cart.svg" alt="корзина">Корзина:</a>
                     <a href="#" class="buy">Оформить заказ</a>
                 </div>
                 <div class="site-info">
                     <h1 class="main-headline">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                     <address class="header-contacts">
                         <span class="site-tel">
-                            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                            <a href="tel:+7 (812) 555-05-55">
+                                <img src="img/icon-phone.svg" alt="телефон">+7 (812) 555-05-55
+                            </a>
                         </span>
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </address>
                     <div class="user-menu">   
-                        <a href="#">Равшан Джамшутович</a>
+                        <a href="#">
+                            <img src="img/icon-user.svg" alt="пользователь">Равшан Джамшутович
+                            <img src="img/icon-login.svg" alt="выйти">
+                        </a>
                         <a href="#">Мои заказы</a>
                         <a href="#">Личный кабинет</a>
                     </div>
@@ -61,27 +74,76 @@
             <div class="breadcrumbs">
                 <ol>
                     <li>
-                        <img src="" alt="Домой">
+                        <img src="img/icon-home.svg" alt="Домой">
                     </li>
                     <li>
-                        <a href="#">КАТАЛОГ</a>
+                        <a href="#">
+                            <img src="img/icon-right-small.svg" alt=">">КАТАЛОГ
+                        </a>
                     </li>
                     <li>
-                        <a href="#">ИСТРУМЕНТ</a>
+                        <a href="#">
+                            <img src="img/icon-right-small.svg" alt=">">ИСТРУМЕНТ
+                        </a>
                     </li>   
                     <li>
-                        <a href="#">ПЕРФОРАТОРЫ</a>
+                        <a href="#">
+                            <img src="img/icon-right-small.svg" alt=">">ПЕРФОРАТОРЫ
+                        </a>
                     </li>
                 </ol>
             </div>
             <section class="product">
                 <h2>ПЕРФОРАТОРЫ</h2>
                 <div class="filter">
-                    <h3>ФИЛЬТР:</h3>
-                    <b>ЦЕНА:</b>
-                    <b>ПРОИЗВОДИТЕЛИ:</b>
-                    <b>ПИТАНИЕ:</b>
-                    <button class="show">ПОКАЗАТЬ</button>
+                    <form action="/" method="get">
+                        <h3>ФИЛЬТР:</h3>
+                        <div class="price-filter">
+                            <b>ЦЕНА:</b>
+                        </div>    
+                        <div class="makers-filter">
+                            <b>ПРОИЗВОДИТЕЛИ:</b>
+                            <label>
+                                <img src="img/checkbox-off.svg" alt="O">
+                                <img src="img/checkbox-on.svg" alt="+">
+                                <input type="checkbox" name="bosch"> BOSCH
+                            </label>
+                            <label>
+                                <img src="img/checkbox-off.svg" alt="O">
+                                <img src="img/checkbox-on.svg" alt="+">
+                                <input type="checkbox" name="interscol"> ИНТЕРСКОЛ
+                            </label>
+                            <label>
+                                <img src="img/checkbox-off.svg" alt="O">
+                                <img src="img/checkbox-on.svg" alt="+">
+                                <input type="checkbox" name="makita"> MAKITA
+                            </label>
+                            <label>
+                                <img src="img/checkbox-off.svg" alt="O">
+                                <img src="img/checkbox-on.svg" alt="+">
+                                <input type="checkbox" name="dewalt"> DEWALT
+                            </label>
+                            <label>
+                                <img src="img/checkbox-off.svg" alt="O">
+                                <img src="img/checkbox-on.svg" alt="+">
+                                <input type="checkbox" name="hitachi"> HITACHI
+                            </label>
+                        </div> 
+                        <div class="power-filter">   
+                            <b>ПИТАНИЕ:</b>
+                            <label>
+                                <img src="img/radio-off.svg" alt="O">
+                                <img src="img/radio-on.svg" alt="+">
+                                <input type="checkbox" name="battery"> АККОМУЛЯТОРНЫЕ
+                            </label>
+                            <label>
+                                <img src="img/radio-off.svg" alt="O">
+                                <img src="img/radio-on.svg" alt="+">
+                                <input type="checkbox" name="wire"> СЕТЕВЫЕ
+                            </label>
+                            <input type="button" name="button-show" value="ПОКАЗАТЬ">
+                        </div>    
+                    </form>    
                 </div>
                 <div class="all-products">
                     <div class="sorting">
@@ -101,7 +163,9 @@
                                 <span class="after-sale"></span>
                             </li>
                             <li>
-                                <button class="button to-buy">КУПИТЬ</button>
+                                <button class="button to-buy">
+                                    <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                </button>
                                 <button class="button in-marker">В ЗАКЛАДКИ</button>
                                 <b>Перфоратор BOSCH BFG 2000</b>
                                 <span class="after-sale"></span>
@@ -156,7 +220,9 @@
             <section class="main-footer">
                 <div class="info">
                     <div class="main-logo">
-                        <a href="#logo">ТЕХНОМАРТ</a>
+                        <a href="#logo">
+                            <img src="img/logo-technomart.svg" alt="Техномарт">
+                        </a>
                     </div>
                     <address class="footer-contacts">
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
@@ -199,13 +265,19 @@
                 <div class="footer-icons">
                     <ul>
                         <li>
-                            <a href="#" class="vk">Вконтакте</a>
+                            <a href="#" class="vk">
+                                <img src="img/icon-vk.svg" alt="vk">
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="fb">Facebook</a>
+                            <a href="#" class="fb">
+                                <img src="img/icon-fb.svg" alt="fb">
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="insta">Instagram</a>
+                            <a href="#" class="insta">
+                                <img src="img/icon-insta.svg" alt="instagram">
+                            </a>
                         </li>
                     </ul>
                 </div>    
