@@ -172,17 +172,17 @@
             	<form action="/" method="post">
             		<p>
             			<label for="username">
-            				<b>Ваше имя:</b>
+            				<span>Ваше имя:</span>
             			</label>
             			<input type="text" name="username" id="username" placeholder="Имя Фамилия">
             			<label for="usermail">
-            				<b>Ваш e-mail:</b>
+            				<span>Ваш e-mail:</span>
             			</label>
             			<input type="email" name="usermail" placeholder="email@example.com">
                     </p>
                     <p>
                     	<label for="comment">
-                    		<b>Текст письма</b>
+                    		<span>Текст письма</span>
                     	</label>
                     	<textarea name="comment" id="comment" placeholder="В свободной форме">
                     	</textarea>
@@ -191,7 +191,9 @@
             </div>
         </section>
         <section class="full-map">
-        	<button type="button" class="close-popup" title="Закрыть"><img src="img/icon-close.svg" alt="Закрыть"></button>
+        	<button type="button" class="close-popup" title="Закрыть">
+        		<img src="img/icon-close.svg" alt="Закрыть">
+        	</button>
         	<img src="img/map.jpg" alt="Карта">
         </section>       
 	</body>
