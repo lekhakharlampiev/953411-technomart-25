@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+
+    background-color: #fff;
+}
+/*  Общие стили */
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: #fff;
+}
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+button {
+    border: none;
+}
+button:active,
+button:focus {
+    border: none;
+    outline: none;
+}
+.button {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+
+    background-color: #ee3643;
+    border-radius: 5px;
+}
+/* Header */
+.header-content {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    background-color: #f3f7f8;
+}
+.user-actions {
+    background-color: #293449;
+}
+.main-logo {
+    background-color: #ee3643;
+    border-bottom: 5px solid #b42933;
+}
+.icon {
+    fill: red;
+}
+.main-logo:hover {
+    background-color: #ca2c37;
+}
+.main-logo:active {
+    background-color: #ba2732;
+}
+.buy {
+    background-color: #63a63e;
+}
+.buy:hover {
+    background-color: #5fbb2d;
+}
+.buy:active {
+    background-color: #518534;
+}
+.main-headline {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+    color: #ee3643;
+}
+.site-tel {
+    border: 3px solid #fff;
+}
+.site-tel a {
+    font-size: 21px;
+    line-height: 21px;
+    font-style: normal;
+    color: #ee3643;
+}
+.header-contacts p {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    color: #32425c;
+}
+.user-menu
+.user-button {
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000;
+
+    background-color: #fff;
+}
+.user-button:hover {
+    color: #ee3643;
+}
+.user-button-username:hover {
+    color: #000;
+}
+.user-menu-nuv a {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    color: #32425c;
+
+    text-decoration: underline;
+}
+.user-menu-nuv a:hover {
+    color: #ee3643;
+}
+.user-menu-nuv a:first-child::after {
+    content: "";
+    display: inline-block;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background-color: #32425c; 
+}
+.nav-menu {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #fff;
+
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
+}
+.nav-menu a:hover {
+    background-color: #293449;
+}
+.nav-menu a:active {
+    background-color: 1d2739;
+    color: #777d88;
+}
+.nav-menu ul {
+    list-style: none;
+}
+/* Основное содержание Главной страгицы */
+.advantages h2,
+.main-contacts h2 {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #000;
+}
+.advantages p,
+.main-contacts p {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000;
+}
+.advantages-list {
+    list-style: none;
+}
+.advantages-list li {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+.advantages-list li::before {
+    content: "";
+    display: inline-block;
+
+    width: 25px;
+    height: 2px;
+    
+    vertical-align: middle;
+
+    background-color: #ee3643;
+}
+/* Основное содержание Каталога */
+.main-catalog {
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    color: #000;
+}
+.breadcrumbs ol {
+    list-style: none;
+}
+.breadcrumbs a {
+    font: inherit;
+    color: inherit;
+}
+input[type="button"] {
+    font-size: 13px;
+    line-height: 18px;
+
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+input[type="button"]:focus {
+    outline: none;
+}
+.product h2 {
+    font-family: "Cuprum", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+
+    color: #32425c;
+    background-color: #f2f6f8;
+}
+.show-products b {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: none;
+}
+.show-products ul {
+    list-style: none;
+}
+.show-products li {
+    border: 1px solid #e5e5e5;
+}
+.show-products li:hover {
+    box-shadow: 0 0 10px 5px #d3d6da;
+}
+.before-sale {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: line-through;
+
+    color: #999;
+}
+.after-sale {
+    position: relative;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+
+    padding: 10px 30px;
+
+    color: #fff;
+    background-color: #ee3643;
+}
+.after-sale::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 110px;
+    width: 0;
+    height: 0;
+    border: 15px solid;
+    border-color: #ee3643 transparent transparent #ee3643;
+    transform: rotate(135deg);
+}
+.about-this-product {
+    background-color: #f2f6f8;
+}
+.about-this-product h2 {
+    font-family: "Cuprum", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+}
+.about-this-product p {
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: none;
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+}
+.footer ul {
+    list-style: none;
+}
+.main-footer {
+    background-color: #32425c;
+}
+.footer-contacts {
+    font-style: inherit;
+}
+.other-nav a {
+    color: #ffd180;
+}
+.other-nav a:active {
+    color: #92856d;
+}
+.nav-info a:active {
+    color: #929caa;
+}
+.main-footer a:hover {
+    text-decoration: underline;
+}
+.aithor-footer {
+    background-color: #293449;
+}
+.aithor-footer p {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+}
+.aithor-footer p a {
+    color: #ffd180;
+}
+.aithor-footer p a:active {
+    color: #ee3643;
+}
+.footer-icons a {
+    display: inline-block;
+    padding-top: 10px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    background-color: #212a3a;
+    border-radius: 50%;
+
+}
+.footer-icons a:hover,
+.footer-icons a:active {
+    background-color: #ee3643;
+}
+/* Модальные окна */
+.popup {
+    display: none;
+}

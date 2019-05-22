@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Техномарт</title>
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -35,10 +38,10 @@
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </address>
                     <div class="user-menu">   
-                        <button class="login">
+                        <a class="user-button" href="#">
                             <img src="img/icon-login.svg" alt="войти">Войти
-                        </button>
-                        <button class="registration">Регистрация</button>
+                        </a>
+                        <a class="user-button" href="#">Регистрация</a>
                     </div>
                 </div>
                 <nav class="nav-menu">
@@ -101,10 +104,7 @@
                             <img src="img/logo-technomart.svg" alt="Техномарт">
                         </a>
                     </div>
-                    <address class="footer-contacts">
-                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-                    </address>
-                    <div class="main-footer-menu">
+                    <div class="nav-info">
                         <ul>
                             <li>
                                 <a href="#">Компания</a>
@@ -121,6 +121,15 @@
                             <li>
                                 <a href="#">Контакты</a>
                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="other-info">   
+                    <address class="footer-contacts">
+                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+                    </address>
+                    <div class="other-nav">
+                        <ul>
                             <li>
                                 <a href="#">Материалы</a>
                             </li>
@@ -159,7 +168,7 @@
                     </ul>
                 </div>    
                 <p>Обратная связь: <br>
-                    <a href="#">mail@htmlacademy.ru</a>
+                    <a class="" href="#">mail@htmlacademy.ru</a>
                 </p>
                 <p>Разработано - <br>
                     <a href="#">htmlacademy.ru</a>
@@ -190,7 +199,7 @@
                 </form>
             </div>
         </section>
-        <section class="full-map">
+        <section class="popup full-map">
             <button type="button" class="close-popup" title="Закрыть">
                 <img src="img/icon-close.svg" alt="Закрыть">
             </button>

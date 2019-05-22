@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Каталог Товаров</title>
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -35,12 +38,14 @@
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </address>
                     <div class="user-menu">   
-                        <a href="#">
+                        <a class="user-button user-button-username" href="#">
                             <img src="img/icon-user.svg" alt="пользователь">Равшан Джамшутович
                             <img src="img/icon-login.svg" alt="выйти">
                         </a>
-                        <a href="#">Мои заказы</a>
-                        <a href="#">Личный кабинет</a>
+                        <p class="user-menu-nuv">
+                            <a href="#">Мои заказы</a>
+                            <a href="#">Личный кабинет</a>
+                        </p>    
                     </div>
                 </div>
                 <nav class="nav-menu">
@@ -153,14 +158,14 @@
                             <li>
                                 <img src="img/catalog-1.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 3000</b>
-                                <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="before-sale">22500 р.</span>
+                                <span class="after-sale">15500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-2.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 6000</b>
-                                <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="before-sale">30500 р.</span>
+                                <span class="after-sale">25500 р.</span>
                             </li>
                             <li>
                                 <button class="button to-buy">
@@ -168,43 +173,43 @@
                                 </button>
                                 <button class="button in-marker">В ЗАКЛАДКИ</button>
                                 <b>Перфоратор BOSCH BFG 2000</b>
-                                <span class="after-sale"></span>
+                                <span class="after-sale">12500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-4.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 3000</b>
-                                <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="before-sale">22500 р.</span>
+                                <span class="after-sale">15500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-5.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 6000</b>
-                                <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="before-sale">30500 р.</span>
+                                <span class="after-sale">25500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-6.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 2000</b>
                                 <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="after-sale">12500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-7.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 3000</b>
-                                <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="before-sale">22500 р.</span>
+                                <span class="after-sale">15500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-8.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 6000</b>
-                                <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="before-sale">30500 р.</span>
+                                <span class="after-sale">25500 р.</span>
                             </li>
                             <li>
                                 <img src="img/catalog-9.jpg" alt="Перфоратор">
                                 <b>Перфоратор BOSCH BFG 2000</b>
                                 <span class="before-sale"></span>
-                                <span class="after-sale"></span>
+                                <span class="after-sale">12500 р.</span>
                             </li>
                         </ul>
                     </div>
@@ -224,10 +229,7 @@
                             <img src="img/logo-technomart.svg" alt="Техномарт">
                         </a>
                     </div>
-                    <address class="footer-contacts">
-                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-                    </address>
-                    <div class="main-footer-menu">
+                    <div class="nav-info">
                         <ul>
                             <li>
                                 <a href="#">Компания</a>
@@ -236,7 +238,7 @@
                                 <a href="#">Новости</a>
                             </li>
                             <li>
-                                <a href="#">Каталог</a>
+                                <a href="catalog.html">Каталог</a>
                             </li>
                             <li>
                                 <a href="#">Доставка</a>
@@ -244,6 +246,15 @@
                             <li>
                                 <a href="#">Контакты</a>
                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="other-info">   
+                    <address class="footer-contacts">
+                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+                    </address>
+                    <div class="other-nav">
+                        <ul>
                             <li>
                                 <a href="#">Материалы</a>
                             </li>
@@ -270,9 +281,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="fb">
-                                <img src="img/icon-fb.svg" alt="fb">
-                            </a>
+                           <a href="#" class="fb">
+                               <img src="img/icon-fb.svg" alt="fb">
+                           </a>
                         </li>
                         <li>
                             <a href="#" class="insta">
@@ -282,7 +293,7 @@
                     </ul>
                 </div>    
                 <p>Обратная связь: <br>
-                    <a href="#">mail@htmlacademy.ru</a>
+                    <a class="" href="#">mail@htmlacademy.ru</a>
                 </p>
                 <p>Разработано - <br>
                     <a href="#">htmlacademy.ru</a>
