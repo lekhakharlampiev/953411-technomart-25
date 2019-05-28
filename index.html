@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Техномарт</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
@@ -123,7 +123,7 @@
         </main>
         <footer class="footer"> 
             <section class="main-footer">
-                <div class="info">
+                <div class="container info">
                     <div class="logo footer-logo">
                         <a href="#logo">
                             <img src="img/logo-technomart.svg" alt="Техномарт">
@@ -149,9 +149,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="other-info">   
+                <div class="container other-info">   
                     <address class="footer-contacts">
-                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+                        <p class="footer-contacts-content">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
                     </address>
                     <div class="other-nav">
                         <ul class="list other-nav-list">
@@ -172,32 +172,36 @@
                 </div>
             </section>
             <section class="author-footer">
-                <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-                <div class="footer-icons">
-                    <ul class="list">
-                        <li>
-                            <a href="#" class="vk">
-                                <img src="img/icon-vk.svg" alt="vk">
-                            </a>
-                        </li>
-                        <li>
-                           <a href="#" class="fb">
-                               <img src="img/icon-fb.svg" alt="fb">
-                           </a>
-                        </li>
-                        <li>
-                            <a href="#" class="insta">
-                                <img src="img/icon-insta.svg" alt="instagram">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <p class="author-footer-content">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+                    <div class="footer-icons">
+                        <ul class="list footer-icons-list">
+                            <li>
+                                <a href="#" class="vk">
+                                    <img src="img/icon-vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb">
+                                    <img src="img/icon-fb.svg" alt="fb">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="insta">
+                                    <img src="img/icon-insta.svg" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="author">    
+                        <p class="author-info">Обратная связь: <br>
+                            <a class="author-contact" href="#">mail@htmlacademy.ru</a>
+                        </p>
+                        <p class="author-info">Разработано - <br>
+                            <a class="author-contact" href="#">htmlacademy.ru</a>
+                        </p>
+                    </div>    
                 </div>    
-                <p class="author-info">Обратная связь: <br>
-                    <a class="author-contact" href="#">mail@htmlacademy.ru</a>
-                </p>
-                <p class="author-info">Разработано - <br>
-                    <a class="author-contact" href="#">htmlacademy.ru</a>
-                </p>
             </section>
         </footer>
         <section class="popup popup-show">

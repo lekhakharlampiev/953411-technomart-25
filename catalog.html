@@ -11,33 +11,47 @@
         <header class="main-header">
             <div class="header-content">
                 <div class="user-actions">
-                    <div class="main-logo">
-                        <a href="index.html" name="logo">
-                            <img src="img/logo-technomart.svg" alt="Техномарт">
+                    <div class="container">
+                        <div class="logo header-logo">
+                            <a name="logo">
+                                <img src="img/logo-technomart.svg" width="110" height="20" alt="Техномарт"> 
+                            </a>
+                        </div>
+                        <div class="header-input">
+                            <span class="icon-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                            </span>     
+                            <input type="text" name="search" id="searh" class="search" placeholder="Поиск:">
+                        </div>    
+                        <a href="#" class="market">
+                            <span class="icon-bookmark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+                            </span>
+                            Закладки: 0    
                         </a>
-                    </div>
-                    <label for="search">
-                        <img src="img/icon-search.svg" alt="поиск">Поиск:
-                    </label>
-                    <input type="text" name="search" class="search">
-                    <a href="#" class="market">
-                        <img src="img/icon-bookmark.svg" alt="закладки">Закладки:
-                    </a>
-                    <a href="#" class="basket">
-                        <img src="img/icon-cart.svg" alt="корзина">Корзина:</a>
-                    <a href="#" class="buy">Оформить заказ</a>
+                        <a href="#" class="basket">
+                            <span class="icon-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                            </span>
+                            Корзина: 0
+                        </a>        
+                        <a href="#" class="buy">Оформить заказ</a>
+                    </div>    
                 </div>
                 <div class="site-info">
-                    <h1 class="main-headline">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-                    <address class="header-contacts">
-                        <span class="site-tel">
-                            <a href="tel:+7 (812) 555-05-55">
-                                <img src="img/icon-phone.svg" alt="телефон">+7 (812) 555-05-55
-                            </a>
-                        </span>
-                        <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                    </address>
-                    <div class="user-menu">   
+                    <div class="container">
+                        <h1 class="main-headline">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+                        <address class="header-contacts">
+                            <div class="site-tel">
+                                <a href="tel:+7 (812) 555-05-55">
+                                    <img class="logo-tel" src="img/icon-phone.svg" alt="телефон">
+                                    <span class="contact-tel">+7 (812) 555-05-55
+                                    </span>
+                                </a>
+                            </div>
+                            <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        </address>
+                        <div class="user-menu-active">   
                         <a class="user-button user-button-username" href="#">
                             <img src="img/icon-user.svg" alt="пользователь">Равшан Джамшутович
                             <img src="img/icon-login.svg" alt="выйти">
@@ -47,31 +61,34 @@
                             <a href="#">Личный кабинет</a>
                         </p>    
                     </div>
+                    </div>    
                 </div>
                 <nav class="nav-menu">
-                    <ul class="list nav-menu-list">
-                        <li>
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#">Компания</a>
-                        </li>
-                        <li>
-                            <a href="#">Каталог</a>
-                        </li>
-                        <li>
-                            <a href="#">Новости</a>
-                        </li>
-                        <li>
-                            <a href="#">Спецпредложения</a>
-                        </li>
-                        <li>
-                            <a href="#">Доставка</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
+                    <div class="container">
+                        <ul class="list nav-menu-list">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Компания</a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Спецпредложения</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -223,8 +240,8 @@
         </main>
         <footer class="footer"> 
             <section class="main-footer">
-                <div class="info">
-                    <div class="main-logo">
+                <div class="container info">
+                    <div class="logo footer-logo">
                         <a href="#logo">
                             <img src="img/logo-technomart.svg" alt="Техномарт">
                         </a>
@@ -249,9 +266,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="other-info">   
+                <div class="container other-info">   
                     <address class="footer-contacts">
-                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+                        <p class="footer-contacts-content">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
                     </address>
                     <div class="other-nav">
                         <ul class="list other-nav-list">
@@ -272,32 +289,36 @@
                 </div>
             </section>
             <section class="author-footer">
-                <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-                <div class="footer-icons">
-                    <ul class="list">
-                        <li>
-                            <a href="#" class="vk">
-                                <img src="img/icon-vk.svg" alt="vk">
-                            </a>
-                        </li>
-                        <li>
-                           <a href="#" class="fb">
-                               <img src="img/icon-fb.svg" alt="fb">
-                           </a>
-                        </li>
-                        <li>
-                            <a href="#" class="insta">
-                                <img src="img/icon-insta.svg" alt="instagram">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <p class="author-footer-content">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+                    <div class="footer-icons">
+                        <ul class="list footer-icons-list">
+                            <li>
+                                <a href="#" class="vk">
+                                    <img src="img/icon-vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb">
+                                    <img src="img/icon-fb.svg" alt="fb">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="insta">
+                                    <img src="img/icon-insta.svg" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="author">    
+                        <p class="author-info">Обратная связь: <br>
+                            <a class="author-contact" href="#">mail@htmlacademy.ru</a>
+                        </p>
+                        <p class="author-info">Разработано - <br>
+                            <a class="author-contact" href="#">htmlacademy.ru</a>
+                        </p>
+                    </div>    
                 </div>    
-                <p class="author-info">Обратная связь: <br>
-                    <a class="author-contact" href="#">mail@htmlacademy.ru</a>
-                </p>
-                <p class="author-info">Разработано - <br>
-                    <a class="author-contact" href="#">htmlacademy.ru</a>
-                </p>
             </section>
         </footer>
         <section class="popup popup-show">
