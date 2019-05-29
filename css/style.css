@@ -518,6 +518,9 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+.footer-icons-list li {
+    margin-right: 5px;
+}
 .author {
     display: flex;
     margin-left: auto;
