@@ -252,12 +252,78 @@ a {
     background-color: #293449;
 }
 .nav-menu a:active {
-    background-color: 1d2739;
+    background-color: #1d2739;
     color: #777d88;
 }
 /* Основное содержание Главной страницы */
 .main-content {
     margin-top: 60px;
+    border: 1px solid red;
+}
+.product-services-list {
+    display: flex;
+    justify-content: space-between;
+}
+.addition-product-services {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-product-services {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+.advantage-product-services {
+    width: 300px;
+    margin-top: 20px;
+}
+.product-services-card-1 {
+    display: flex;
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #ffbf47;
+}
+.product-services-card-2 {
+    display: flex;
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #3bbce3;
+}
+.product-services-card-3 {
+    display: flex;
+    width: 300px;
+    padding: 20px;
+    background-color: #dc91d8;
+}
+.product-services-card-4 {
+    display: flex;
+    width: 300px;
+    padding: 20px 0;
+    background-color: #8ed78f;
+}
+.product-services-card-5 {
+    display: flex;
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #ffc047;
+}
+.card-content {
+}
+.show-slider {
+    z-index: 2;
+}
+.slider-1 {
+    position: absolute;
+}
+.slider-2 {
+    display: block;
+}
+.advantage-product-services {
+    width: 300px;
 }
 .advantages-container {
     display: flex;
@@ -554,6 +620,9 @@ a {
     margin-left: 155px;
     display: flex;
     flex-wrap: wrap;
+}
+.footer-icons-list li {
+    margin-right: 5px;
 }
 .author {
     display: flex;
