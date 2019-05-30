@@ -35,12 +35,20 @@ a {
     list-style: none;
 }
 .button {
+    border: none;
+    outline: none;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
 
     background-color: #ee3643;
     border-radius: 5px;
+}
+.button: hover,
+.button: focus,
+.button: active {
+    outline: none;
+    border: none;
 }
 .container {
     /*display: flex;*/
@@ -258,7 +266,6 @@ a {
 /* Основное содержание Главной страницы */
 .main-content {
     margin-top: 60px;
-    border: 1px solid red;
 }
 .product-services-list {
     display: flex;
@@ -421,6 +428,21 @@ a {
     display: flex;
     flex-direction: column;
 }
+.makers-filter
+input[type='checkbox'],
+.power-filter
+input[type='radio'] {
+    display: none;
+}
+.description-item {
+    padding-left: 30px;
+    position: relative;
+}
+.description-item img {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
 .power-filter {
     display: flex;
     flex-direction: column;
@@ -437,8 +459,49 @@ a {
     outline: none;
 }
 .all-products {
-    width: 585px;
+    width: 700px;
     margin-left: auto;
+}
+.sorting {
+    display: flex;
+    align-items: center;
+    color: #bcb7b1;
+    text-transform: uppercase;
+    width: 700px;
+    background-color: #f7f2ec;
+}
+.sorting-button {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sorting-button a {
+    margin-right: 40px;
+}
+.arrows {
+    position: relative;
+}
+.arrows::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 13px solid #ee3642;
+}
+.arrows::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 13px solid #bcb7b1;
 }
 .show-products-list {
     display: flex;
@@ -459,7 +522,9 @@ a {
     color: #32425c;
     background-color: #f2f6f8;
 }
-.filter-title {
+.filter-title,
+.sorting-title {
+    color: #000000;
     font-size: 13px;
     line-height: 18px;
 }
@@ -509,6 +574,20 @@ a {
     border: 14px solid;
     border-color: #ee3643 transparent transparent #ee3643;
     transform: rotate(135deg);
+}
+.card-product-buy {
+    outline: none;
+    border: none;
+    background-color: #63a63d;
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 2px 1px 1px #387414;
+}
+.card-product-in-marker {
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #63a63d;
+    border-radius: 5px;
 }
 .about-this-product {
     background-color: #f2f6f8;
