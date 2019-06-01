@@ -56,39 +56,37 @@
                             <img src="img/icon-user.svg" alt="пользователь">Равшан Джамшутович
                             <img src="img/icon-login.svg" alt="выйти">
                         </a>
-                        <p class="user-menu-nuv">
-                            <a href="#">Мои заказы</a>
-                            <a href="#">Личный кабинет</a>
-                        </p>    
+                        <div class="user-menu-nuv">
+                            <a class="user-menu-item" href="#">Мои заказы</a>
+                            <a class="user-menu-item" href="#">Личный кабинет</a>
+                        </div>    
                     </div>
                     </div>    
                 </div>
-                <nav class="nav-menu">
-                    <div class="container">
-                        <ul class="list nav-menu-list">
-                            <li>
-                                <a href="index.html">Главная</a>
-                            </li>
-                            <li>
-                                <a href="#">Компания</a>
-                            </li>
-                            <li>
-                                <a href="catalog.html">Каталог</a>
-                            </li>
-                            <li>
-                                <a href="#">Новости</a>
-                            </li>
-                            <li>
-                                <a href="#">Спецпредложения</a>
-                            </li>
-                            <li>
-                                <a href="#">Доставка</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
+                <nav class="container nav-menu">
+                    <ul class="list nav-menu-list">
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -118,7 +116,8 @@
             <section class="product">
                 <h2 class="product-title">ПЕРФОРАТОРЫ</h2>
                 <div class="product-container">
-                    <div class="filter">
+                    <aside class="filter">
+                        <h2 class="visually-hidden">Фильтр товаров</h2>
                         <form action="/" method="get">
                             <h3 class="filter-title">ФИЛЬТР:</h3>
                             <div class="price-filter">
@@ -175,10 +174,11 @@
                                 <input type="button" name="button-show" class="button-show" value="ПОКАЗАТЬ">
                             </div>    
                         </form>    
-                    </div>
-                    <div class="all-products">
+                    </aside>
+                    <section class="all-products">
+                        <h2 class="visually-hidden">Каталог товаров</h2>
                         <div class="sorting">
-                            <h3 class="sorting-title">сортировка:</h3>
+                            <h3 class="sorting-title">Cортировка:</h3>
                                 <div class="sorting-button">
                                     <a href="#">по цене</a>
                                     <a href="#">по типу</a>
@@ -188,131 +188,169 @@
                         </div>
                         <div class="show-products">
                             <ul class="list show-products-list">
-                                <li class="card-product">
-                                    <img src="img/catalog-1.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 3000</b>
-                                    <span class="before-sale">22500 р.</span>
-                                    <span class="after-sale">15500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-1.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 3000
+                                        </b>
+                                        <span class="before-sale">22500 р.</span>
+                                        <span class="after-sale">15500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
                                     </div>    
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-2.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 6000</b>
-                                    <span class="before-sale">30500 р.</span>
-                                    <span class="after-sale">25500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-2.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 6000
+                                        </b>
+                                        <span class="before-sale">30500 р.</span>
+                                        <span class="after-sale">25500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
                                     </div>    
                                 </li>
-                                <li class="card-product">
-                                    <div class="show-button button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
-                                    <b class="product-description">Перфоратор BOSCH BFG 2000</b>
-                                    <span class="no-sale before-sale">00000</span>
-                                    <span class="after-sale">12500 р.</span>
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-9.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 2000
+                                        </b>
+                                        <span class="no-sale before-sale">00000</span>
+                                        <span class="after-sale">12500 р.</span>
+                                        <div class="show-button button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-4.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 3000</b>
-                                    <span class="before-sale">22500 р.</span>
-                                    <span class="after-sale">15500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-4.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 3000
+                                        </b>
+                                        <span class="before-sale">22500 р.</span>
+                                        <span class="after-sale">15500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-5.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 6000</b>
-                                    <span class="before-sale">30500 р.</span>
-                                    <span class="after-sale">25500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-5.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 6000
+                                        </b>
+                                        <span class="before-sale">30500 р.</span>
+                                        <span class="after-sale">25500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-6.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 2000</b>
-                                    <span class="no-sale before-sale">00000</span>
-                                    <span class="after-sale">12500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-6.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 2000
+                                        </b>
+                                        <span class="no-sale before-sale">00000</span>
+                                        <span class="after-sale">12500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-7.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 3000</b>
-                                    <span class="before-sale">22500 р.</span>
-                                    <span class="after-sale">15500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-7.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 3000
+                                        </b>
+                                        <span class="before-sale">22500 р.</span>
+                                        <span class="after-sale">15500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-8.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 6000</b>
-                                    <span class="before-sale">30500 р.</span>
-                                    <span class="after-sale">25500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-8.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 6000
+                                        </b>
+                                        <span class="before-sale">30500 р.</span>
+                                        <span class="after-sale">25500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
-                                <li class="card-product">
-                                    <img src="img/catalog-9.jpg" alt="Перфоратор" width="215" height="165">
-                                    <b class="product-description">Перфоратор BOSCH BFG 2000</b>
-                                    <span class="no-sale before-sale">00000</span>
-                                    <span class="after-sale">12500 р.</span>
-                                    <div class="button-card-product">
-                                        <button class="button card-product-buy">
-                                            <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
-                                        </button>
-                                        <button class="button card-product-in-marker">В ЗАКЛАДКИ
-                                        </button>
-                                    </div>    
+                                <li class="card-product-item">
+                                    <div class="card-product">
+                                        <img src="img/catalog-9.jpg" alt="Перфоратор" width="215" height="165">
+                                        <b class="product-description">Перфоратор BOSCH BFG 2000
+                                        </b>
+                                        <span class="no-sale before-sale">00000</span>
+                                        <span class="after-sale">12500 р.</span>
+                                        <div class="button-card-product">
+                                            <button class="button card-product-buy">
+                                                <img src="img/icon-cart.svg" alt="купить">КУПИТЬ
+                                            </button>
+                                            <button class="button card-product-in-marker">В ЗАКЛАДКИ
+                                            </button>
+                                        </div>
+                                    </div>        
                                 </li>
                             </ul>
                         </div>
                         <div class="switch-pages">
-                            <a class="selected-page number" href="#">1</a>
-                            <a class="number" href="#">2</a>
-                            <a class="number" href="#">3</a>
-                            <a class="number" href="#">следующая</a>
+                            <div class="pages-numbers">
+                                <ol class="pages-numbers-list">
+                                    <li class="pages-numbers-item">
+                                        <a class="selected-page number" href="#">1</a>
+                                    </li>    
+                                    <li class="pages-numbers-item">
+                                        <a class="number" href="#">2</a>
+                                    </li>    
+                                    <li>
+                                        <a class="number" href="#">3</a>
+                                    </li>    
+                                </ol>
+                            </div>
+                            <button type="button" class="button button-switch-pages">следующая</button>
                         </div>
-                    </div>
+                    </section>
                 </div>    
             </section>
             <section class="about-this-product">

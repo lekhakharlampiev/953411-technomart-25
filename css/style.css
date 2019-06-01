@@ -1,8 +1,7 @@
 body {
-    width: 1200px;
+    width: 100%;
     margin: 0;
     padding: 0;
-    margin: 0 auto;
 
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
@@ -15,13 +14,20 @@ body {
     padding: 10px 55px;
     padding-bottom: 6px;
     background-color: #ee3643;
-    border-bottom: 5px solid #b42933;
+    box-shadow: 0px 3px 1px 0px #b42933;
 }
 .logo:hover {
     background-color: #ca2c37;
 }
 .logo:active {
     background-color: #ba2732;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 /*  Общие стили */
 a {
@@ -36,7 +42,6 @@ a {
 }
 .button {
     border: none;
-    outline: none;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
@@ -84,15 +89,10 @@ a {
     display: flex;
     justify-content: flex-start;
 }
-.header-logo {
-    position: absolute;
-    top: 0;
-}
 .header-input {
     flex-grow: 1;
     position: relative;
     padding: 0;
-    margin-left: 220px;
 }
 .search {
     height: 100%;
@@ -195,26 +195,29 @@ a {
     margin-left: auto;
 }
 .user-menu-nuv {
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
-.user-menu-nuv a {
+.user-menu-item {
     font-size: 14px;
     font-style: normal;
     line-height: 24px;
     color: #32425c;
+    vertical-align: middle;
 
     text-decoration: underline;
 }
-.user-menu-nuv a:first-child {
-    position: relative;
-    margin-right: 30px;
+.user-menu-item:last-child {
+    margin-left: 15px;
 }
-.user-menu-nuv a:first-child::after {
+.user-menu-item:last-child::after {
+    display: none;
+}
+.user-menu-item::after {
     content: "";
-    position: absolute;
-    top: 5px;
-    left: 80px;
+    display: inline-block;
+    margin-left: 15px;
 
     width: 5px;
     height: 5px;
@@ -267,7 +270,7 @@ a {
 .main-content {
     margin-top: 60px;
 }
-.product-services-list {
+.product-services {
     display: flex;
     justify-content: space-between;
 }
@@ -282,41 +285,36 @@ a {
     margin-top: 20px;
 }
 .advantage-product-services {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     margin-top: 20px;
 }
-.product-services-card-1 {
+.product-services-card {
+    box-sizing: border-box;
     display: flex;
     width: 300px;
     padding: 20px;
     margin-right: 20px;
+}
+.materials-card {
     background-color: #ffbf47;
 }
-.product-services-card-2 {
-    display: flex;
-    width: 300px;
-    padding: 20px;
-    margin-right: 20px;
+.tool-card {
     background-color: #3bbce3;
 }
-.product-services-card-3 {
-    display: flex;
-    width: 300px;
-    padding: 20px;
+.technic-card {
     background-color: #dc91d8;
+    margin: 0;
 }
-.product-services-card-4 {
-    display: flex;
-    width: 300px;
-    padding: 20px 0;
+.discount-card {
     background-color: #8ed78f;
+    margin: 0;
 }
-.product-services-card-5 {
-    display: flex;
-    width: 300px;
-    margin-top: 20px;
-    padding: 20px 0;
+.delivery-card {
     background-color: #ffc047;
+    margin: 0;
+    margin-top: 20px;
 }
 .card-content {
 }
@@ -358,7 +356,7 @@ a {
     margin: 0;
     padding: 0;
 }
-.advantages-list li {
+.advantages-list-item {
     position: relative;
     margin-left: 40px;
     margin-bottom: 20px;
@@ -366,7 +364,7 @@ a {
     line-height: 20px;
     color: #000000;
 }
-.advantages-list li::before {
+.advantages-list-item::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -407,14 +405,23 @@ a {
     color: #000000;
 }
 .breadcrumbs a {
-    font: inherit;
-    color: inherit;
+    margin-right: 15px;
+    color: inherit; /* цвет у всех ссылок изначально белый */
+}
+.breadcrumbs img {
+    margin-right: 15px;
 }
 .breadcrumbs-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 .product {
+}
+.product-title {
+    margin: 0;
+    padding: 0;
+    padding: 30px;
 }
 .product-container {
     display: flex;
@@ -684,21 +691,52 @@ input[type='radio'] {
 }
 .switch-pages {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+.pages-numbers {
+    display: flex;
+}
+.pages-numbers-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    width: 285px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.pages-numbers-item {
+    margin-right: 10px;
 }
 .switch-pages a {
     text-decoration: none;
 }
 .number {
+    font-size: 13px;
+    line-height: 18px;
     color: #000000;
     padding: 10px 15px;
     border: 1px solid #e4e4e4;
+    border-radius: 3px;
 }
 .selected-page {
     color: #ffffff;
     background-color: #ee3642;
+}
+.button-switch-pages {
+    margin: 0;
+    margin-left: 20px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid #e4e4e4;
+
 }
 .about-this-product {
     background-color: #f2f6f8;
