@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     margin: 0;
     padding: 0;
 
@@ -194,7 +193,7 @@ a {
 .user-button-username {
     margin-left: auto;
 }
-.user-menu-nuv {
+.user-menu-nav {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -218,12 +217,10 @@ a {
     content: "";
     display: inline-block;
     margin-left: 15px;
-
     width: 5px;
     height: 5px;
-
+    vertical-align: middle;
     border-radius: 50%;
-
     background-color: #32425c;
 }   
 .user-button-input {
@@ -730,10 +727,10 @@ input[type='radio'] {
     margin-left: 20px;
     padding: 10px 30px;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     font-size: 13px;
     line-height: 18px;
-    color: #000;
+    color: #000000;
     text-transform: uppercase;
     border: 1px solid #e4e4e4;
 
