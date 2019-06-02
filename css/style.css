@@ -913,11 +913,12 @@ input[type='radio'] {
     display: block;
 }
 .popup-catalog {
-    position: absolute;
+    position: fixed;
     width: 620px;
-    top: 440px;
+    top: 50%;
     left: 50%;
     margin-left: -310px;
+    margin-top: -150px;
     font-size: 30px;
     line-height: 30px;
     color: #000000;
@@ -942,6 +943,7 @@ input[type='radio'] {
     margin-right: 30px;
 }
 .popup-catalog-buttons {
+    display: flex;
     padding: 30px 75px;
     background-color: #f1f1f1;
 }
@@ -949,6 +951,10 @@ input[type='radio'] {
 .return-shopping {
     width: 220px;
     padding: 10px 0px;
+}
+.ordering {
+    display: block;
+    text-align: center;
 }
 .return-shopping {
     margin-left: 20px;
