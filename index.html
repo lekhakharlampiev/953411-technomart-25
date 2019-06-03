@@ -25,13 +25,13 @@
                         </div>    
                         <a href="#" class="market">
                             <span class="icon-bookmark">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+                                <img src="img/icon-bookmark.svg" alt="закладки" class="icon-header-status">
                             </span>
                             Закладки: 0    
                         </a>
                         <a href="#" class="basket">
                             <span class="icon-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                                <img src="img/icon-cart.svg" alt="корзина" class="icon-header-status">
                             </span>
                             Корзина: 0
                         </a>        
@@ -132,7 +132,7 @@
                                 <h3>Доставка</h3>
                                 <a href="#">бесплатно</a>
                             </div>
-                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNzgiIGhlaWdodD0iNjMiIHZpZXdCb3g9IjAgMCA3OCA2MyI+PGcgZmlsbD0iI0ZGRiI+PGNpcmNsZSBjeD0iMjUuOTgzIiBjeT0iNTUuNSIgcj0iNy41Ii8+PGNpcmNsZSBjeD0iNTkuOTgyIiBjeT0iNTUuNSIgcj0iNy41Ii8+PHBhdGggZD0iTTY0IDBIMTEuMDYyYy0zLjE4OCAwLTMgMy4xMjUtMyAzLjEyNVY4SDMuNDY5YTMuNDY5IDMuNDY5IDAgMSAwIDAgNi45MzhsMjguMDg1IDEuODQuMTk2LjA0M2MtLjc2MSAzLjE5Ny04LjkzOCAzLjgwNS04LjkzOCAzLjgwNWwtOC4zMS40MjhINS40NDZhMy4zNzUgMy4zNzUgMCAxIDAgMCA2Ljc1bDIzLjY1NiAxLjI1NGMtLjgwNyAzLjE1My02LjI5IDMuNzU2LTYuMjkgMy43NTZsLTE0Ljc1MS43NnYxNS42MTVjMCAzLjE4OCAyLjU2NCAzLjgxMiAyLjU2NCAzLjgxMmgyLjA5OWMxLjE3My02LjI2MSA2LjY1OS0xMSAxMy4yNTktMTFzMTIuMDg1IDQuNzM5IDEzLjI1OSAxMWg3LjQwNGMxLjE3NC02LjI2MSA2LjY2LTExIDEzLjI2LTExIDYuNjAxIDAgMTIuMDg2IDQuNzM5IDEzLjI2IDExaDEuNzA5Qzc3LjgxMiA1MyA3OCA0OC45MzggNzggNDguOTM4di0xNS4yNUM3OCAxNC44MTIgNjQgMCA2NCAwek01MiAyMy45Mzh2LTE1aDEwLjA2Mmw1Ljc1IDE1SDUyeiIvPjwvZz48L3N2Zz4K" alt="доставка">
+                            <img src="img/icon-5.svg" alt="доставка">
                         </div>    
                     </div>
                 </div>
@@ -166,8 +166,15 @@
                 <section class="main-contacts">
                     <h2 class="main-contacts-title">КОНТАКТЫ</h2>
                     <p class="main-contacts-content">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-                    <img src="img/map.jpg" alt="Карта">
-                    <a href="#" class="button button-main-contacts">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+                    <img src="img/map.jpg" alt="Карта" class="min-map js-min-map" title="Увеличить">
+                    <button type="button" class="button button-main-contacts js-button-main-contacts">
+                        ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!
+                    </button>
+                </section>
+                <section class="full-map js-full-map">
+                    <button type="button" class="button close-map js-close-map" title="Закрыть">
+                        <img src="img/icon-close.svg" alt="Закрыть">
+                    </button>
                 </section>
             </div>    
         </main>
@@ -258,35 +265,38 @@
                 </div>    
             </section>
         </footer>
-        <section class="popup popup-show">
-            <div class="popup-main-page">
-                <button type="button" class="close-popup" title="Закрыть"><img src="img/icon-close.svg" alt="Закрыть"></button>
-                <form action="/" method="post">
-                    <p>
-                        <label for="username">
-                            <span>Ваше имя:</span>
-                        </label>
-                        <input type="text" name="username" id="username" placeholder="Имя Фамилия">
-                        <label for="usermail">
-                            <span>Ваш e-mail:</span>
-                        </label>
-                        <input type="email" name="usermail" placeholder="email@example.com">
-                    </p>
-                    <p>
-                        <label for="comment">
-                            <span>Текст письма</span>
-                        </label>
-                        <textarea name="comment" id="comment" placeholder="В свободной форме">
-                        </textarea>
-                    </p>
+        <section class="popup js-popup-feedback">
+            <div class="popup-feedback">
+                <button type="button" class="button close-popup-feedback js-close-popup-feedback" title="Закрыть"><img src="img/icon-close.svg" alt="Закрыть"></button>
+                <form action="#" method="post" class="popup-feedback-form">
+                    <div class="input-container">
+                        <div class="user-data">
+                            <div class="user-name">
+                                <label for="username">
+                                    Ваше имя:
+                                </label>
+                                <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+                            </div>
+                            <div class="user-email">    
+                                <label for="usermail">
+                                    Ваш e-mail:
+                                </label>
+                                <input type="email" name="usermail" placeholder="email@example.com">
+                            </div>    
+                        </div>
+                        <div class="user-comment">
+                            <label for="comment">
+                                Текст письма:
+                            </label>
+                            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+                        </div>
+                    </div>    
+                    <div class="button-submit-form">
+                        <input type="submit" class="button submit-form" value="отправить">
+                    </div>
                 </form>
             </div>
         </section>
-        <section class="popup full-map">
-            <button type="button" class="close-popup" title="Закрыть">
-                <img src="img/icon-close.svg" alt="Закрыть">
-            </button>
-            <img src="img/map.jpg" alt="Карта">
-        </section>       
+        <script type="text/javascript" src="js/index.js"></script>       
     </body>
 </html>

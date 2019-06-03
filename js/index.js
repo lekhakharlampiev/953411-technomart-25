@@ -1,23 +1,30 @@
-//модальное окно каталога
-//открывается по нажатию на кнопку "купить" в карточке товара
-var popupInCatalog = document.querySelector('.js-popup-catalog');
-var popupCatalogClose = document.querySelector('.js-close-popup-catalog');
-var toBuyProductButton = document.querySelectorAll('.js-card-product-buy');
-var returnShoppingButton = document.querySelector('.js-return-shopping');
 
-for (var i = 0; i < toBuyProductButton.length; i++) {
-	toBuyProductButton[i].addEventListener('click', function (evt) {
-	evt.preventDefault();
-	popupInCatalog.classList.add('popup-show');
-});
-}
+//модальное окно обратной связи 
+var popupFeedBack = document.querySelector('.js-popup-feedback');
+var popupFeedBackOpen = document.querySelector('.js-button-main-contacts');
+var popupFeedBackClose = document.querySelector('.js-close-popup-feedback');
 
-popupCatalogClose.addEventListener('click', function (evt) {
-	evt.preventDefault();
-	popupInCatalog.classList.remove('popup-show');
-});
+popupFeedBackOpen.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popupFeedBack.classList.add('popup-show');
+})
 
-returnShoppingButton.addEventListener('click', function (evt) {
-	evt.preventDefault();
-	popupInCatalog.classList.remove('popup-show');
-});
+popupFeedBackClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popupFeedBack.classList.remove('popup-show');
+})
+// большая карта
+
+var smallMap = document.querySelector('.js-min-map');
+var fullMap = document.querySelector('.js-full-map');
+var fullMapClose = document.querySelector('.js-close-map');
+
+smallMap.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    fullMap.classList.add('popup-show');
+})
+
+fullMapClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    fullMap.classList.remove('popup-show');
+})
