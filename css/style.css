@@ -244,6 +244,12 @@ a {
     vertical-align: middle;
     border-radius: 50%;
     background-color: #32425c;
+}
+.user-menu-item:hover {
+    color: #ee3642;
+}
+.user-menu-item:active {
+    color: #c5c5c5;
 }   
 .user-button-input {
     display: flex;
@@ -261,13 +267,25 @@ a {
     align-items: center;
 }
 .user-button-username
-img:last-child {
+svg:last-child {
     margin-right: 10px;
     margin-left: 30px;
 }
 .user-button-username
-img:first-child {
+svg:first-child {
     margin: 0 10px; 
+}
+.user-button-username:hover 
+path {
+    fill: #000000;
+}
+.user-button-username:active 
+span {
+    color: #c5c5c5;
+}
+.user-button-username:active 
+path {
+    fill: #c5c5c5;
 }
 .user-button-username:hover {
     color: #000000;
@@ -482,16 +500,22 @@ img:first-child {
 }
 .product-container {
     display: flex;
+    margin-top: 20px;
+}
+.filter {
+    width: 220px;
 }
 .filter form {
     display: flex;
     flex-direction: column;
 }
 .price-filter {
+    padding-bottom: 25px;
     border-bottom: 1px solid #d9d9d9;
 }
 .box-range {
     position: relative;
+    box-sizing: border-box;
     width: 100%;
     padding: 40px 20px;
     background-color: #f7f2ec;
@@ -516,6 +540,7 @@ img:first-child {
     height: 20px;
     box-sizing: border-box;
     border-radius: 50%;
+    box-shadow: 0 1px 1px 1px #cccccc;
     background-color: #ffffff;
 }
 .start-price::after,
@@ -543,7 +568,19 @@ img:first-child {
 }
 .from,
 .before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 99px;
+    margin-top: 10px;
+    padding: 10px 0;
     background-color: #f7f2ec;
+    text-align: center;
+}
+.long-dash {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 10px;
 }
 .makers-filter {
     width: 190px;
@@ -570,12 +607,13 @@ input[type='radio'] {
 .power-filter {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #d9d9d9;
 }
 .button-show {
+    width: 140px;
     font-size: 13px;
     line-height: 18px;
-
+    margin-top: 70px;
+    padding: 10px 35px;
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
@@ -588,6 +626,7 @@ input[type='radio'] {
     margin-left: auto;
 }
 .sorting {
+    position: relative;
     display: flex;
     align-items: center;
     color: #bcb7b1;
@@ -595,22 +634,30 @@ input[type='radio'] {
     width: 700px;
     background-color: #f7f2ec;
 }
-.sorting-button {
+.sorting-buttons {
     margin-left: auto;
     display: flex;
     justify-content: space-between;
+    margin-right: 100px;
 }
-.sorting-button a {
+.sorting-button {
+    color: #c5c0ba;
     margin-right: 40px;
+    border-bottom: 1px dashed #ee3642;
 }
-.arrows {
-    position: relative;
+.sorting-active {
+    border: none;
+    color: #ee3642;
+}
+.sorting-button:hover {
+    color: #000000;
+    border-bottom: 1px dashed #ee3642;
 }
 .arrows::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15px;
+    right: 60px; 
     width: 0; 
     height: 0;
     border-left: 7px solid transparent;
@@ -620,13 +667,23 @@ input[type='radio'] {
 .arrows::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15px;
+    right: 20px;
     width: 0; 
     height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 13px solid #bcb7b1;
+}
+.arrows:hover::after {
+    border-bottom-color: #000000;  
+}
+.arrows:hover::before {
+     border-top-color: #000000;
+}
+
+.show-products {
+    margin-top: 20px;
 }
 .show-products-list {
     display: flex;
@@ -642,17 +699,19 @@ input[type='radio'] {
     color: #32425c;
     background-color: #f2f6f8;
 }
-.filter-title {
-    background-color: #f7f2ec;
-}
 .filter-title,
 .sorting-title {
+    padding: 10px 20px;
+    margin: 0;
     color: #000000;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
+    background-color: #f7f2ec;
 }
 .filter-description {
+    display: block;
+    padding: 15px 0;
     font-size: 17px;
     line-height: 30px;
 }
