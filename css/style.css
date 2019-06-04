@@ -89,19 +89,37 @@ a {
     justify-content: flex-start;
 }
 .header-input {
+    display: flex;
+    align-items: center;
     flex-grow: 1;
     position: relative;
     padding: 0;
 }
 .search {
+    position: relative;
+    padding-left: 40px; 
     height: 100%;
-    margin: 0;
-    padding: 0;
+    flex-grow: 1;
     border: none;
     outline: none;
     color: #ffffff;
     background-color: inherit;
 }
+.search:focus {
+    background-color: #ffffff;
+    color: #000000;
+
+}
+.icon-search {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 5px;
+
+}
+.search:focus +.icon-search path {
+    fill: #ee3642;
+} 
 .icon-search,
 .icon-bookmark,
 .icon-cart {
