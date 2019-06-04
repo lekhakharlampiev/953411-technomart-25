@@ -41,7 +41,10 @@ a {
     list-style: none;
 }
 .button {
+    display: inline-block;
+    vertical-align: middle;
     border: none;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
@@ -85,7 +88,7 @@ a {
     padding: 0;
     background-color: #293449;
 }
-.user-actions .container {
+.user-actions-box {
     display: flex;
     justify-content: flex-start;
 }
@@ -290,25 +293,20 @@ a {
     padding: 0;
     align-items: center;
 }
-.user-button-username
-svg:last-child {
+.user-button-username svg:last-child {
     margin-right: 10px;
     margin-left: 30px;
 }
-.user-button-username
-svg:first-child {
+.user-button-username svg:first-child {
     margin: 0 10px; 
 }
-.user-button-username:hover 
-path {
+.user-button-username:hover path {
     fill: #000000;
 }
-.user-button-username:active 
-span {
+.user-button-username:active span {
     color: #c5c5c5;
 }
-.user-button-username:active 
-path {
+.user-button-username:active path {
     fill: #c5c5c5;
 }
 .user-button-username:hover {
@@ -442,6 +440,7 @@ path {
 
 }
 .product-services-card {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
@@ -457,9 +456,9 @@ path {
 .product-services-card img {
     margin-left: auto;
 }
-.product-services-card .button {
-    display: block;
-    width: 130px;
+.product-services-card 
+.button {
+    width: 135px;
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
@@ -484,13 +483,16 @@ path {
     margin: 0;
     margin-top: 20px;
 }
-.popular-goods-header {
+.popular-goods-header,
+.brands-header {
     display: flex;
     align-items: center;
     padding: 25px 0;
+    margin-bottom: 20px;
     background-color: #f7f2ec;
 }
-.popular-goods-button {
+.popular-goods-button,
+.brands-button {
     width: 250px;
     padding: 10px;
     text-align: center;
@@ -498,15 +500,19 @@ path {
     margin-left: auto;
     margin-right: 25px;
 }
-.popular-goods-title {
+.popular-goods-title,
+.brands-title {
     margin: 0;
+    font-size: 30px;
+    line-height: 30px;
     margin-left: 25px;
     font-weight: normal;
     text-transform: uppercase;
     color: #2f434a;
 }
 
-.popular-goods-list {
+.popular-goods-list,
+.brands-list {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -524,6 +530,29 @@ path {
     position: relative;
     display: flex;
     margin-bottom: 85px;
+}
+.brands {
+    margin-top: 20px;
+}
+.brands-header {
+    margin: 0;
+}
+.brands-list-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.brands-list-item {
+    width: 220px;
+    min-height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
 }
 .advantages {
     width: 540px;
