@@ -365,18 +365,6 @@ a {
 .previous-slider {
     position: absolute;
     top: 120px;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    background-image: url("../img/icon-right.svg");
-    background-repeat: no-repeat;
-    z-index: 50;
-
-}
-.next-slider {
-    position: absolute;
-    top: 120px;
     left: 20px;
     width: 40px;
     height: 40px;
@@ -385,6 +373,17 @@ a {
     background-repeat: no-repeat;
     z-index: 50;
 
+}
+.next-slider {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    z-index: 50;
 }
 .slider-button {
     position: absolute;
@@ -405,6 +404,7 @@ a {
     width: 100%;
     height: 100%;
     background-image: url(../img/slider-1.jpg);
+    background-size: 100% 93%;
     background-repeat: no-repeat;
 }
 .slider-2 {
@@ -412,6 +412,7 @@ a {
     width: 100%;
     height: 100%;
     background-image: url(../img/slider-2.jpg);
+    background-size: 100% 93%;
     background-repeat: no-repeat;
 }
 .slider-label {
@@ -533,6 +534,7 @@ a {
 }
 .brands {
     margin-top: 20px;
+    margin-bottom: 85px;
 }
 .brands-header {
     margin: 0;
@@ -553,6 +555,79 @@ a {
     margin-top: 20px;
     box-sizing: border-box;
     border: 1px solid #e5e5e5;
+}
+.additional-service {
+    margin-bottom: 75px;
+    background-image: url("../img/background.png");
+}
+.additional-service-header {
+    padding-top: 60px;
+}
+.additional-service-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    color: #000000;
+}
+.tagline {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+.additional-service-container {
+    display: flex;
+    margin-top: 40px;
+    min-height: 330px;
+    box-sizing: border-box;
+}
+.additional-service-list {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+.additional-service-item {
+    width: 240px;
+}
+.additional-service-item 
+.button {
+    width: 100%;
+    padding: 20px;
+    background-color: #32425c;
+    text-align: left;
+    color: #ffffff; 
+    border-radius: 0px;
+
+}
+.additional-service-item 
+.service-select {
+    background-color: #ffffff;
+    color: #32425c;
+}
+.additional-service-slider {
+    width: 690px;
+}
+.service-slider-delivery {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/delivery.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.service-slider-guarantee {
+    display: none;
+}
+.service-slider-credit {
+    display: none;
+}
+.slider-service-content {
+    width: 285px;
+    margin-left: 70px;
+    color: #000000;
+}
+.select-slider {
+    display: block;
 }
 .advantages {
     width: 540px;
@@ -596,9 +671,9 @@ a {
     background-color: #ee3643;
 }
 .button-advantages {
-    display: block;
+    text-align: center;
     margin-top: 35px;
-    padding: 10px 40px;
+    padding: 10px;
 }
 .main-contacts {
     width: 300px;
