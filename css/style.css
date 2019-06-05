@@ -462,7 +462,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
-    background-color: rgb(128, 128, 128, 0.3);
+    background-color: rgba(128, 128, 128, 0.3);
 }
 .materials-card {
     background-color: #ffbf47;
@@ -619,6 +619,8 @@ a {
 .full-map {
     display: none;
     position: absolute;
+    top: 10px;/* под вопросом */
+    left: 0;
     width: 940px;
     height: 380px;
     background-image: url("../img/full-map-popup.jpg");
