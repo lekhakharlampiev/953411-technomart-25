@@ -88,3 +88,4 @@ var previousSliderIndex = function(slider) {
 	return next;
 }
 //конец слайдера товаров
+//слайдер сервисов

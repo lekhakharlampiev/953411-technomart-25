@@ -52,10 +52,10 @@ a {
     background-color: #ee3643;
     border-radius: 5px;
 }
-.button: hover,
-.button: focus,
-.button: active {
-    outline: none;
+.button:hover,
+.button:focus,
+.button:active {
+    /*outline: none;*/
     border: none;
 }
 .container {
@@ -426,7 +426,7 @@ a {
     margin: 0;
     margin-bottom: 15px;
 }
-.slider-title b{
+.slider-label b {
     font-weight: normal;
 }
 .show-slider {
@@ -490,7 +490,7 @@ a {
     align-items: center;
     padding: 25px 0;
     margin-bottom: 20px;
-    background-color: #f7f2ec;
+    background-color: #f9f6f1;
 }
 .popular-goods-button,
 .brands-button {
@@ -527,11 +527,6 @@ a {
 .advantage-product-services {
     width: 300px;
 }
-.advantages-container {
-    position: relative;
-    display: flex;
-    margin-bottom: 85px;
-}
 .brands {
     margin-top: 20px;
     margin-bottom: 85px;
@@ -565,6 +560,7 @@ a {
 }
 .additional-service-title {
     margin: 0;
+    margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: normal;
@@ -584,6 +580,7 @@ a {
 .additional-service-list {
     width: 250px;
     margin: 0;
+    margin-top: 30px;
     padding: 0;
 }
 .additional-service-item {
@@ -603,6 +600,14 @@ a {
 .service-select {
     background-color: #ffffff;
     color: #32425c;
+}
+.button-delivery {
+   border-bottom: 1px solid #25354f; 
+}
+.button-guarantee,
+.button-credit {
+    border-bottom: 1px solid #25354f;
+    border-top: 1px solid #41516b;
 }
 .additional-service-slider {
     width: 690px;
@@ -628,6 +633,12 @@ a {
 }
 .select-slider {
     display: block;
+    border: none;
+}
+.advantages-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 85px;
 }
 .advantages {
     width: 540px;
@@ -641,6 +652,8 @@ a {
 }
 .advantages-content,
 .main-contacts-content {
+    margin: 0;
+    margin-bottom: 30px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
