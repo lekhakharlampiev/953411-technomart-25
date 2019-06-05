@@ -76,7 +76,7 @@ a {
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     font-style: normal;
     font-weight: normal;
     color: #fff;
@@ -101,7 +101,7 @@ a {
 }
 .search {
     position: relative;
-    padding-left: 40px; 
+    padding-left: 50px; 
     height: 100%;
     flex-grow: 1;
     border: none;
@@ -180,12 +180,14 @@ a {
 }
 .site-info .container {
     display: flex;
-    justify-content: space-between;
-    padding: 45px 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 42px 0;
 }
 .main-headline {
     margin: 0;
     padding: 0;
+    padding-top: 5px;
     padding-left: 50px;
     font-size: 16px;
     font-style: italic;
@@ -194,11 +196,13 @@ a {
 }
 .header-contacts {
     margin: 0;
+    margin-left: 75px;
     padding: 0;
 }
 .site-tel {
+    min-width: 250px;
     border: 3px solid #ffffff;
-    padding: 10px;
+    padding: 7px;
 }
 .logo-tel {
     margin: 0 5px;
@@ -212,6 +216,7 @@ a {
     padding-right: 30px;
 }
 .header-contacts-address {
+    margin: 0;
     font-size: 14px;
     font-style: normal;
     line-height: 24px;
@@ -221,6 +226,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: 70px;
 
 }
 .user-menu-active {
@@ -230,13 +236,12 @@ a {
 }
 .user-logo {
 }
-.user-button,
 .user-button {
     padding: 10px 20px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
-
+    box-sizing: border-box;
     background-color: #ffffff;
 }
 .user-button-username {
@@ -343,9 +348,12 @@ a {
     background-color: #1d2739;
     color: #777d88;
 }
+
 /* Основное содержание Главной страницы */
+
+
 .main-content {
-    margin-top: 60px;
+    margin-top: 65px;
 }
 .product-services {
     display: flex;
@@ -522,7 +530,7 @@ a {
     margin-left: -20px;
 }
 .popular-goods-list li {
-    margin-left: 18px;
+    margin-left: 20px;
 }
 .advantage-product-services {
     width: 300px;
@@ -722,7 +730,9 @@ a {
     right: 5px;
     background-color: transparent;
 }
+
 /* Основное содержание Каталога */
+
 .main-catalog {
     font-family: "PT Sans", sans-serif;
     font-size: 15px;
@@ -1027,6 +1037,7 @@ input[type='radio']:checked ~ label::after {
     margin-bottom: 20px;
 }
 .card-product {
+    box-sizing: border-box;
     width: 220px;
     position: relative;
     display: flex;
@@ -1048,7 +1059,7 @@ input[type='radio']:checked ~ label::after {
 .price-product {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px;
+    padding: 12px 25px;
 }
 .product-description {
     font-size: 18px; 
