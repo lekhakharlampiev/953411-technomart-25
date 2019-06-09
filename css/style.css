@@ -56,7 +56,7 @@ a {
 .button:focus,
 .button:active {
     /*outline: none;*/
-    border: none;
+    /*border: none;*/
 }
 .container {
     /*display: flex;*/
@@ -362,6 +362,7 @@ a {
 .nav-menu-list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -437,6 +438,7 @@ a {
 .slider {
     width: 620px;
     position: absolute;
+    background-color: #4d4542;/*запасной фон*/
 }
 .slider-1 {
     display: none;
@@ -603,6 +605,7 @@ a {
 }
 .additional-service {
     margin-bottom: 75px;
+    background-color: #f2f6f8;/*запасной фон*/
     background-image: url("../img/background.png");
 }
 .additional-service-header {
@@ -812,10 +815,10 @@ a {
 .full-map {
     display: none;
     position: absolute;
-    top: 10px;/* под вопросом */
+    top: -10px;
     left: 0;
     width: 940px;
-    height: 380px;
+    height: 450px;
     background-image: url("../img/full-map-popup.jpg");
     background-repeat: no-repeat;
     background-position: 50% 60%;
@@ -1071,6 +1074,7 @@ input[type='radio']:checked ~ label::after {
     margin-left: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-right: 100px;
 }
 .sorting-button {

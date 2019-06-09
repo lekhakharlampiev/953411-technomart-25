@@ -281,23 +281,23 @@
                     <div class="additional-service-container">
                         <ul class="additional-service-list">
                             <li class="additional-service-item">
-                                <button type="button" class="button service-select button-delivery">Доставка</button>
+                                <button type="button" class="button service-select button-delivery js-additional-service-button">Доставка</button>
                             </li>
                             <li class="additional-service-item">
-                                <button type="button" class="button button-guarantee">Гарантия</button>
+                                <button type="button" class="button button-guarantee js-additional-service-button">Гарантия</button>
                             </li>
                             <li class="additional-service-item">
-                                <button type="button" class="button button-credit">Кредит</button>
+                                <button type="button" class="button button-credit js-additional-service-button">Кредит</button>
                             </li>
                         </ul>
                         <div class="additional-service-slider">
-                            <div class="service-slider-delivery">
+                            <div class="select-slider service-slider-delivery js-service-slider">
                                 <div class="slider-service-content">
                                     <h3 class="slider-service-title">Доставка</h3>
                                     <p class="slider-service-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                                 </div>
                             </div>
-                            <div class="service-slider-guarantee">
+                            <div class="service-slider-guarantee js-service-slider">
                                 <div class="slider-service-content">
                                     <h3 class="slider-service-title">Гарантия</h3>
                                     <p class="slider-service-paragraph">Если купленный у нас товар поломается или заискрит, 
@@ -305,7 +305,7 @@
                                     Дом уж восстановите как-нибудь сами.</p>
                                 </div>
                             </div>
-                            <div class="select-slider service-slider-credit">
+                            <div class="service-slider-credit js-service-slider">
                                 <div class="slider-service-content">
                                     <h3 class="slider-service-title">Кредит</h3>
                                     <p class="slider-service-paragraph">Залезть в долговую яму стало проще!<br> 
@@ -348,6 +348,7 @@
                     </button>
                 </section>
                 <section class="full-map js-full-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.1239525532847!2d30.31644026742068!3d59.939836920176376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560077512694!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <button type="button" class="button close-map js-close-map" title="Закрыть">
                         <img src="img/icon-close.svg" alt="Закрыть">
                     </button>
@@ -435,7 +436,7 @@
                         </p>
                         <p class="author-info">
                             Разработано - <br>
-                            <a class="author-contact" href="#">htmlacademy.ru</a>
+                            <a class="author-contact" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                         </p>
                     </div>    
                 </div>    
@@ -451,13 +452,13 @@
                                 <label for="username">
                                     Ваше имя:
                                 </label>
-                                <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+                                <input type="text" name="username" id="username" placeholder="Имя Фамилия" required>
                             </div>
                             <div class="user-email">    
                                 <label for="usermail">
                                     Ваш e-mail:
                                 </label>
-                                <input type="email" name="usermail" id="usermail" placeholder="email@example.com">
+                                <input type="email" name="usermail" id="usermail" placeholder="email@example.com" required>
                             </div>    
                         </div>
                         <div class="user-comment">
@@ -471,6 +472,19 @@
                         <input type="submit" class="button submit-form" value="отправить">
                     </div>
                 </form>
+            </div>
+        </section>
+        <section class="popup js-popup-catalog">
+            <div class="popup-catalog">
+                <button type="button" class="button close-popup-catalog js-close-popup-catalog" title="Закрыть"><img src="img/icon-close.svg" alt="Закрыть"></button>
+                <div class="popup-catalog-info">
+                    <img src="img/icon-mark.svg" alt="Успешно">
+                    <span>Товар добавлен в корзину!</span>
+                </div>
+                <div class="popup-catalog-buttons">
+                    <a href="#" class="button ordering">ОФОРМИТЬ ЗАКАЗ</a>
+                    <button type="button" class="button return-shopping js-return-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+                </div>    
             </div>
         </section>
         <script type="text/javascript" src="js/index.js"></script>       
