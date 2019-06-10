@@ -1216,7 +1216,6 @@ input[type='radio']:checked ~ label:hover::after {
 }
 .new-flag {
     position: absolute;
-    z-index: 10;
     top: 0;
     right: 0;
 
@@ -1278,8 +1277,9 @@ input[type='radio']:checked ~ label:hover::after {
     left: 5px;
 }
 .card-product-buy {
-    position: relative;
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 130px;
     box-sizing: border-box;
     padding: 10px 0;
@@ -1294,12 +1294,6 @@ input[type='radio']:checked ~ label:hover::after {
     color: #ffffff;
     box-shadow: 0 2px 1px 1px #387414;
 }
-.card-product-buy img {
-    position: absolute;
-    top: 12px;
-    left: 10px;
-    opacity: 0.5;
-}
 .card-product-buy:hover {
     cursor: pointer;
     background-color: #5fba2e;
@@ -1309,23 +1303,25 @@ input[type='radio']:checked ~ label:hover::after {
 }
 .card-product-buy::before {
     content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    margin-right: 20px;
     width: 15px;
     height: 15px;
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity: 0.5;
 }
-.card-product-buy:hover 
-.product-buy-icon,
-.card-product-buy:active 
-.product-buy-icon {
+.card-product-buy:hover::before {
     opacity: 1;
-} 
+}
 .card-product-in-marker {
     width: 130px;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 7px 0;
     font-family: 'Cuprum', sans-serif;
     color: #32425c;
     background-color: #ffffff;
@@ -1436,7 +1432,7 @@ input[type='radio']:checked ~ label:hover::after {
     margin-bottom: 30px;
 }
 .footer-logo {
-    padding: 20px 45px;
+    padding: 15px 40px;
 }
 .nav-info {
     display: flex;
@@ -1552,6 +1548,7 @@ input[type='radio']:checked ~ label:hover::after {
     display: none;
 }
 .popup-show {
+    z-index: 100;
     display: block;
 }
 /* каталог */
