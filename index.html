@@ -12,11 +12,9 @@
             <div class="header-content">
                 <div class="user-actions">
                     <div class="container user-actions-box">
-                        <div class="logo header-logo">
-                            <a name="logo">
-                                <img src="img/logo-technomart.svg" width="110" height="20" alt="Техномарт"> 
-                            </a>
-                        </div>
+                        <a name="logo" class="logo header-logo">
+                            <img src="img/logo-technomart.svg" width="110" height="20" alt="Техномарт"> 
+                        </a>
                         <div class="header-input">
                             <input type="text" name="search" id="searh" class="search" placeholder="Поиск:">
                             <span class="icon-search">
@@ -47,7 +45,7 @@
                         </address>
                         <div class="user-menu">   
                             <a class="user-button user-button-input" href="#">Войти</a>
-                            <a class="user-button" href="#">Регистрация</a>
+                            <a class="user-button user-button-input-registration" href="#">Регистрация</a>
                         </div>
                     </div>    
                 </div>
@@ -348,6 +346,7 @@
                     </button>
                 </section>
                 <section class="full-map js-full-map">
+                    <h3 class="visually-hidden">Развернутая карта</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.1239525532847!2d30.31644026742068!3d59.939836920176376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560077512694!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <button type="button" class="button close-map js-close-map" title="Закрыть">
                         <img src="img/icon-close.svg" alt="Закрыть">
@@ -358,11 +357,9 @@
         <footer class="footer"> 
             <section class="main-footer">
                 <div class="container info">
-                    <div class="logo footer-logo">
-                        <a href="#logo">
-                            <img src="img/logo-technomart.svg" alt="Техномарт">
-                        </a>
-                    </div>
+                    <a href="#logo" class="logo footer-logo">
+                        <img src="img/logo-technomart.svg" alt="Техномарт">
+                    </a>
                     <div class="nav-info">
                         <ul class="list nav-info-list">
                             <li>

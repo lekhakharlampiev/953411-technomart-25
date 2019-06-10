@@ -92,6 +92,10 @@ a {
     display: flex;
     justify-content: flex-start;
 }
+.header-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
 .header-input {
     display: flex;
     align-items: center;
@@ -174,6 +178,11 @@ a {
 .basket:hover::before {
     opacity: 1;
 }
+.market:active,
+.basket:active {
+    background-color: #161c28;
+}
+
 .basket-catalog {
     background-color: #ee3642;
 } 
@@ -310,7 +319,8 @@ a {
 }.user-button-input:hover::before {
     opacity: 1;
 }
-.user-button-input:hover {
+.user-button-input:hover,
+.user-button-input-registration:hover {
     color: #ee3643;
 }
 .user-button-username {
@@ -435,6 +445,12 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
+.slider-button:hover {
+    background-color: #c92c37;
+}
+.slider-button:active {
+    background-color: #ba2632;
+}
 .slider {
     width: 620px;
     position: absolute;
@@ -506,6 +522,14 @@ a {
     text-transform: uppercase;
     padding: 10px 0;
     background-color: rgba(128, 128, 128, 0.3);
+}
+.product-services-card 
+.button:hover {
+    background-color: rgba(128, 128, 128, 0.5);;
+}
+.product-services-card 
+.button:active {
+    background-color: rgba(128, 128, 128, 0.8);;
 }
 .materials-card {
     background-color: #ffbf47;
@@ -580,6 +604,7 @@ a {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -599,6 +624,12 @@ a {
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 1px solid #e5e5e5;
+}
+.brands-list-item:hover {
+    box-shadow: 0 0 10px 5px #d3d6da;
+}
+.brands-list-item:active {
+    opacity: 0.5;
 }
 .brands-list-item:nth-child(4n) {
     margin-right: 0;
@@ -1035,6 +1066,15 @@ input[type='radio']:checked ~ label::after {
     border-radius: 50%;
     background-color: #c1c1c1;
 }
+.description-item:hover::before,
+.description-item-radio:hover::before,
+input[type='checkbox']:checked ~ label:hover::after{
+    border-color: #808080;
+}
+input[type='radio']:checked ~ label:hover::after {
+    background-color: #808080;
+}
+
 .description-item img {
     top: 0;
     left: 0;
@@ -1053,6 +1093,7 @@ input[type='radio']:checked ~ label::after {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
+    cursor: pointer;
 }
 .button-show:focus {
     outline: none;
