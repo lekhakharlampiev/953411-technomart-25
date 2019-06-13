@@ -1,12 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #fff;
-
     background-color: #ffffff;
 }
 .logo {
@@ -52,14 +50,7 @@ a {
     background-color: #ee3643;
     border-radius: 5px;
 }
-.button:hover,
-.button:focus,
-.button:active {
-    /*outline: none;*/
-    /*border: none;*/
-}
 .container {
-    /*display: flex;*/
     margin: 0;
     padding: 0;
     width: 940px;
@@ -116,14 +107,12 @@ a {
 .search:focus {
     background-color: #ffffff;
     color: #000000;
-
 }
 .icon-search {
     position: absolute;
     z-index: 2;
     top: 10px;
     left: 5px;
-
 }
 .search:focus + .icon-search path {
     fill: #ee3642;
@@ -182,7 +171,6 @@ a {
 .basket:active {
     background-color: #161c28;
 }
-
 .basket-catalog {
     background-color: #ee3642;
 } 
@@ -195,7 +183,8 @@ a {
 .buy:active {
     background-color: #518534;
 }
-.site-info .container {
+.site-info 
+.container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -255,8 +244,6 @@ a {
     margin-top: 5px;
     margin-left: auto;
 }
-.user-logo {
-}
 .user-button {
     padding: 10px 20px;
     font-size: 21px;
@@ -275,7 +262,6 @@ a {
     line-height: 24px;
     color: #32425c;
     vertical-align: middle;
-
     text-decoration: underline;
 }
 .user-menu-item:not(:first-child) {
@@ -314,7 +300,8 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}.user-button-input:hover::before {
+}
+.user-button-input:hover::before {
     opacity: 1;
 }
 .user-button-input:hover,
@@ -362,7 +349,6 @@ a {
     font-weight: normal;
     line-height: 17px;
     color: #ffffff;
-
     background-color: #32425c;
     border-bottom: 5px solid #293449;
 }
@@ -388,7 +374,6 @@ a {
 }
 
 /* Основное содержание Главной страницы */
-
 
 .main-content {
     margin-top: 60px;
@@ -419,7 +404,6 @@ a {
     background-image: url("../img/icon-left.svg");
     background-repeat: no-repeat;
     z-index: 50;
-
 }
 .next-slider {
     position: absolute;
@@ -438,7 +422,6 @@ a {
     padding: 10px 0;
     top: 210px;
     left: 25px;
-    z-index: 50;
     text-transform: uppercase;
     text-align: center;
 }
@@ -451,7 +434,7 @@ a {
 .slider {
     width: 620px;
     position: absolute;
-    background-color: #4d4542;/*запасной фон*/
+    background-color: #4d4542;
 }
 .slider-1 {
     display: none;
@@ -574,7 +557,6 @@ a {
     text-transform: uppercase;
     color: #2f434a;
 }
-
 .popular-goods-list {
     display: flex;
     justify-content: flex-start;
@@ -633,7 +615,7 @@ a {
 }
 .additional-service {
     margin-bottom: 50px;
-    background-color: #f2f6f8;/*запасной фон*/
+    background-color: #f2f6f8;
     background-image: url("../img/background.png");
 }
 .additional-service-header {
@@ -862,7 +844,6 @@ a {
 }
 
 /* Основное содержание Каталога */
-
 .main-catalog {
     font-family: "PT Sans", sans-serif;
     font-size: 15px;
@@ -870,7 +851,6 @@ a {
     font-weight: normal;
     line-height: 18px;
     text-transform: uppercase;
-
     color: #000000;
 }
 .breadcrumbs {
@@ -893,7 +873,7 @@ a {
     background-repeat: no-repeat;
 }
 .breadcrumbs a {
-    color: inherit; /* цвет у всех ссылок изначально белый */
+    color: inherit;
 }
 .breadcrumbs-list {
     display: flex;
@@ -1038,7 +1018,6 @@ input[type='checkbox']:checked ~ label::after {
     border-top-style: none;
     border-right-style: none;
     transform: rotate(-45deg);  
-
 }
 .description-item-radio::before {
     content: " ";
@@ -1155,7 +1134,6 @@ input[type='radio']:checked ~ label:hover::after {
     border-bottom-color: #ee3642;
     border-top-color: #ee3642;
 }
-
 .show-products {
     margin-top: 20px;
     margin-bottom: 25px;
@@ -1176,7 +1154,6 @@ input[type='radio']:checked ~ label:hover::after {
     font-size: 30px;
     font-weight: normal;
     line-height: 30px;
-
     color: #32425c;
     background-color: #f2f6f8;
 }
@@ -1208,7 +1185,6 @@ input[type='radio']:checked ~ label:hover::after {
     flex-direction: column;
     justify-content: flex-end; 
     text-align: center;
-
     border: 1px solid #e5e5e5;
 }
 .card-product:hover {
@@ -1218,7 +1194,6 @@ input[type='radio']:checked ~ label:hover::after {
     position: absolute;
     top: 0;
     right: 0;
-
 }
 .price-product {
     display: flex;
@@ -1231,10 +1206,10 @@ input[type='radio']:checked ~ label:hover::after {
     margin-bottom: 10px;
     text-transform: none;
     color: #000000;
-
 }
 .before-sale {
     display: inline-block;
+    vertical-align: middle;
     min-height: 20px;
     font-size: 17px;
     font-weight: bold;
@@ -1391,7 +1366,6 @@ input[type='radio']:checked ~ label:hover::after {
     color: #000000;
     text-transform: uppercase;
     border: 1px solid #e4e4e4;
-
 }
 .about-this-product {
     padding: 50px 0;
@@ -1453,8 +1427,6 @@ input[type='radio']:checked ~ label:hover::after {
 }
 .other-info {
     display: flex;
-}
-.footer-contacts {
 }
 .footer-contacts-content {
     margin: 0;
@@ -1531,13 +1503,13 @@ input[type='radio']:checked ~ label:hover::after {
 }
 .footer-icons a {
     display: inline-block;
+    vertical-align: middle;
     padding-top: 10px;
     width: 40px;
     height: 30px;
     text-align: center;
     background-color: #212a3a;
     border-radius: 50%;
-
 }
 .footer-icons a:hover,
 .footer-icons a:active {
@@ -1551,7 +1523,7 @@ input[type='radio']:checked ~ label:hover::after {
     z-index: 100;
     display: block;
 }
-/* каталог */
+    /* каталог */
 .popup-catalog {
     position: fixed;
     width: 620px;
@@ -1565,7 +1537,6 @@ input[type='radio']:checked ~ label:hover::after {
     background-color: #ffffff;
     border-top: 5px solid #ee3643;
     box-shadow: 0 20px 40px 5px #787f8c;
-
 }
 .close-popup-catalog {
     position: absolute;
@@ -1601,7 +1572,7 @@ input[type='radio']:checked ~ label:hover::after {
     background-color: #ffffff;
     color: #000000;
 }
-/* главная страница */
+    /* главная страница */
 .popup-feedback {
     position: fixed;
     width: 620px;
@@ -1642,8 +1613,6 @@ input[type='radio']:checked ~ label:hover::after {
     align-items: center;
     margin-bottom: 20px;
 }
-.user-comment { 
-}
 .user-comment textarea {
     box-sizing: border-box;
     resize: none;
@@ -1663,5 +1632,4 @@ input[type='radio']:checked ~ label:hover::after {
     width: 100%;
     padding: 10px 0;
     text-transform: uppercase;
-
 }
