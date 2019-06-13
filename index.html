@@ -5,7 +5,7 @@
         <title>Техномарт</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style-min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="site-info">
                     <div class="container">
-                        <h1 class="main-headline">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+                        <h1 class="main-headline">Интернет-магазин строительных материалов и&#160;инструментов для ремонта</h1>
                         <address class="header-contacts">
                             <div class="site-tel">
                                 <a href="tel:+7(812)555-05-55">
@@ -321,21 +321,24 @@
                     <p class="advantages-content">
                         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
                     </p>
-                    <p class="advantages-content">
-                        Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:
-                    </p>
-                    <ul class="list advantages-list">
-                        <li class="advantages-list-item" >
-                            Деловые линии
-                        </li>
-                        <li class="advantages-list-item">
-                            Автотрейдинг
-                        </li>
-                        <li class="advantages-list-item">
-                            ЖелДорЭкспедиция
-                        </li>
-                    </ul>
-                    <a href="#" class="button button-advantages">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                    <div class="advantages-delivery-container">
+                        <p class="advantages-delivery-content">
+                            Мы можем доставить ваш товар в самые отдаленные точки России!
+                            Техномарт работает со многими транспортными компаниями:
+                        </p>
+                        <ul class="list advantages-list">
+                            <li class="advantages-list-item" >
+                                Деловые линии
+                            </li>
+                            <li class="advantages-list-item">
+                                Автотрейдинг
+                            </li>
+                            <li class="advantages-list-item">
+                                ЖелДорЭкспедиция
+                            </li>
+                        </ul>
+                        <a href="#" class="button button-advantages">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                    </div>    
                 </section>
                 <section class="main-contacts">
                     <h2 class="main-contacts-title">КОНТАКТЫ</h2>
@@ -348,9 +351,7 @@
                 <section class="full-map js-full-map">
                     <h3 class="visually-hidden">Развернутая карта</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.1239525532847!2d30.31644026742068!3d59.939836920176376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560077512694!5m2!1sru!2sru" width="940" height="450" style="border:0" allowfullscreen></iframe>
-                    <button type="button" class="button close-map js-close-map" title="Закрыть">
-                        <img src="img/icon-close.svg" alt="Закрыть" width="20" height="20">
-                    </button>
+                    <button type="button" class="button close-popup js-close-map" title="Закрыть">закрыть</button>
                 </section>
             </div>    
         </main>
@@ -410,19 +411,13 @@
                     <div class="footer-icons">
                         <ul class="list footer-icons-list">
                             <li>
-                                <a href="#" class="vk">
-                                    <img src="img/icon-vk.svg" alt="vk" width="30" height="30">
-                                </a>
+                                <a href="#" class="vk"></a>
                             </li>
                             <li>
-                                <a href="#" class="fb">
-                                    <img src="img/icon-fb.svg" alt="fb" width="30" height="30">
-                                </a>
+                                <a href="#" class="fb"></a>
                             </li>
                             <li>
-                                <a href="#" class="insta">
-                                    <img src="img/icon-insta.svg" alt="instagram" width="30" height="30">
-                                </a>
+                                <a href="#" class="insta"></a>
                             </li>
                         </ul>
                     </div>
@@ -441,9 +436,7 @@
         </footer>
         <section class="popup js-popup-feedback">
             <div class="popup-feedback">
-                <button type="button" class="button close-popup-feedback js-close-popup-feedback" title="Закрыть">
-                    <img src="img/icon-close.svg" alt="Закрыть" width="20" height="20">
-                </button>
+                <button type="button" class="button close-popup js-close-popup-feedback" title="Закрыть">закрыть</button>
                 <form action="#" method="post" class="popup-feedback-form">
                     <div class="input-container">
                         <div class="user-data">
@@ -475,7 +468,7 @@
         </section>
         <section class="popup js-popup-catalog">
             <div class="popup-catalog">
-                <button type="button" class="button close-popup-catalog js-close-popup-catalog" title="Закрыть"><img src="img/icon-close.svg" alt="Закрыть" width="20" height="20"></button>
+                <button type="button" class="button close-popup js-close-popup-catalog" title="Закрыть">закрыть</button>
                 <div class="popup-catalog-info">
                     <img src="img/icon-mark.svg" alt="Успешно" width="50" height="50">
                     <span>Товар добавлен в корзину!</span>
@@ -486,6 +479,6 @@
                 </div>    
             </div>
         </section>
-        <script type="text/javascript" src="js/index-min.js"></script>       
+        <script type="text/javascript" src="js/index.js"></script>       
     </body>
 </html>

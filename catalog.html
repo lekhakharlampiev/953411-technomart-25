@@ -5,7 +5,7 @@
         <title>Каталог товаров</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style-min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -44,10 +44,13 @@
                             </div>
                             <p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         </address>
-                        <div class="user-menu-active">   
-                            <a class="user-button user-button-username" href="#">
-                                <span>Алексей Харлампиев</span>
-                            </a>
+                        <div class="user-menu-active">
+                            <div class="user-button">
+                                <a class="user-button-username" href="#">
+                                    <span>Алексей Харлампиев</span>
+                                </a>
+                                <a href="#" class="user-menu-output">Выход</a>
+                            </div>
                             <div class="user-menu-nav">
                                 <a class="user-menu-item" href="#">Мои заказы</a>
                                 <a class="user-menu-item" href="#">Личный кабинет</a>
@@ -86,7 +89,7 @@
             <div class="container breadcrumbs">
                 <ol class="list breadcrumbs-list">
                     <li>
-                        <img src="img/icon-home.svg" alt="Домой" width="15" height="15">
+                        <a href="index.html" class="breadcrumbs-item-home" title="На главную"></a>
                     </li>
                     <li class="breadcrumbs-item">
                         <a href="#">
@@ -447,19 +450,13 @@
                     <div class="footer-icons">
                         <ul class="list footer-icons-list">
                             <li>
-                                <a href="#" class="vk">
-                                    <img src="img/icon-vk.svg" alt="vk" width="30" height="30">
-                                </a>
+                                <a href="#" class="vk">Вконтакте</a>
                             </li>
                             <li>
-                                <a href="#" class="fb">
-                                    <img src="img/icon-fb.svg" alt="fb" width="30" height="30">
-                                </a>
+                                <a href="#" class="fb">Фейсбук</a>
                             </li>
                             <li>
-                                <a href="#" class="insta">
-                                    <img src="img/icon-insta.svg" alt="instagram" width="30" height="30">
-                                </a>
+                                <a href="#" class="insta">Инстаграм</a>
                             </li>
                         </ul>
                     </div>
@@ -478,7 +475,7 @@
         </footer>
         <section class="popup js-popup-catalog">
             <div class="popup-catalog">
-                <button type="button" class="button close-popup-catalog js-close-popup-catalog" title="Закрыть"><img src="img/icon-close.svg" alt="Закрыть" width="20" height="20"></button>
+                <button type="button" class="button close-popup js-close-popup-catalog" title="Закрыть">закрыть</button>
                 <div class="popup-catalog-info">
                     <img src="img/icon-mark.svg" alt="Успешно" width="50" height="50">
                     <span>Товар добавлен в корзину!</span>
@@ -489,6 +486,6 @@
                 </div>    
             </div>
         </section>
-        <script type="text/javascript" src="js/index-min.js"></script>    
+        <script type="text/javascript" src="js/index.js"></script>    
     </body>
 </html>

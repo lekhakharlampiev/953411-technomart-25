@@ -60,18 +60,18 @@ if (smallMap && fullMap && fullMapClose) {
 }
 
 // слайдер товаров
-var slider = document.querySelectorAll(".js-slider-product");
-var nextSlider = document.querySelector(".js-next-slider");
-var previousSlider = document.querySelector(".js-previous-slider");
+var slider = document.querySelectorAll('.js-slider-product');
+var nextSlider = document.querySelector('.js-next-slider');
+var previousSlider = document.querySelector('.js-previous-slider');
 if (slider && nextSlider && previousSlider) {
     nextSlider.addEventListener('click', function(evt) {
         evt.preventDefault();
-        slider[nextSliderIndex(slider)].classList.add("show-slider");
+        slider[nextSliderIndex(slider)].classList.add('show-slider');
 
     });
     previousSlider.addEventListener('click', function(evt) {
         evt.preventDefault();
-        slider[previousSliderIndex(slider)].classList.add("show-slider");
+        slider[previousSliderIndex(slider)].classList.add('show-slider');
 
     });
 }
@@ -80,12 +80,12 @@ var nextSliderIndex = function(slider) {
     var start;
     //находим слайдер, который включен
     for(i = 0; i < slider.length; i++) {
-        if(slider[i].classList.contains("show-slider")) {
+        if(slider[i].classList.contains('show-slider')) {
             start = i;
         }
     }
     //отключаем активный слайдер
-    slider[start].classList.remove("show-slider");
+    slider[start].classList.remove('show-slider');
     var next;
     //если слайдер был последний, возвращаемся к первому,
     //если нет - переходим к следующему
@@ -102,12 +102,12 @@ var previousSliderIndex = function(slider) {
     var start;
     //находим слайдер, который включен
     for(i = 0; i < slider.length; i++) {
-        if(slider[i].classList.contains("show-slider")) {
+        if(slider[i].classList.contains('show-slider')) {
             start = i;
         }
     }
     //отключаем активный слайдер
-    slider[start].classList.remove("show-slider");
+    slider[start].classList.remove('show-slider');
     var next;
     //если слайдер был последний, возвращаемся к первому,
     //если нет - переходим к следующему
@@ -121,8 +121,8 @@ var previousSliderIndex = function(slider) {
 }
 //конец слайдера товаров
 //слайдер сервисов
-var serviseSliderButtons = document.querySelectorAll(".js-additional-service-button");
-var serviseSlider = document.querySelectorAll(".js-service-slider");
+var serviseSliderButtons = document.querySelectorAll('.js-additional-service-button');
+var serviseSlider = document.querySelectorAll('.js-service-slider');
 for (var i = 0; i < serviseSliderButtons.length; i++) {
     serviseSliderButtons[i].addEventListener('click', function(evt) {
         evt.preventDefault();
