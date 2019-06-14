@@ -194,7 +194,6 @@ a {
 .container {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     padding: 38px 0;
     padding-top: 45px;
 }
@@ -210,6 +209,7 @@ a {
     color: #ee3643;
 }
 .header-contacts {
+    width: 270px;
     margin: 0;
     padding: 0;
     margin-left: 70px;
@@ -245,7 +245,7 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 70px;
+    margin-left: auto;
     margin-bottom: auto;
 
 }
@@ -263,6 +263,7 @@ a {
     color: #000000;
     box-sizing: border-box;
     background-color: #ffffff;
+    margin-bottom: auto;
 }
 .user-menu-nav {
     margin-top: 10px;
@@ -302,8 +303,14 @@ a {
     display: flex;
     margin-right: 10px;
 }
+.user-button-input-registration {
+    text-align: center;
+    flex-grow: 1;
+}
 .user-button-input::before {
     content: "";
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 10px;
     width: 20px;
     height: 20px;
@@ -331,6 +338,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
+    margin: 0;
 }
 .user-button-username {
     display: flex;
