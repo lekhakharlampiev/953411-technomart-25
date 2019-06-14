@@ -1,4 +1,5 @@
 body {
+    min-width: 940px;
     margin: 0;
     padding: 0;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -65,7 +66,7 @@ a {
     padding: 0;
 }
 .header-content {
-    width: 100%;
+    min-width: 940px;
     margin: 0;
     padding: 0;
     padding-bottom: 60px;
@@ -75,7 +76,7 @@ a {
     background-color: #f3f7f8;
 }
 .user-actions {
-    width: 100%;
+    min-width: 940px;
     margin: 0;
     padding: 0;
     background-color: #293449;
@@ -1505,6 +1506,7 @@ input[type="radio"] {
 
 /* Footer */
 .footer {
+    min-width: 940px;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
@@ -1775,5 +1777,8 @@ input[type="radio"] {
     }
     .other-nav-list li {
         margin-left: 30px;
+    }
+    .author-info {
+        min-width: 120px;
     }
 }
