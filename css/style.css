@@ -1033,7 +1033,7 @@ a {
 }
 .start-price::after,
 .stop-price::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     left: 8px;
@@ -1464,7 +1464,7 @@ input[type="radio"] {
 }
 .pages-numbers-item:hover,
 .button-switch-pages:hover {
-    border:1px solid #ee3642;
+    border: 1px solid #ee3642;
 }
 .selected-page {
     color: #ffffff;
