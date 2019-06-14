@@ -1378,11 +1378,9 @@ input[type="radio"] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 130px;
+    width: 138px;
     box-sizing: border-box;
     padding: 10px 0;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
     outline: none;
     border: none;
