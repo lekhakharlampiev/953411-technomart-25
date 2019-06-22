@@ -387,7 +387,7 @@ a {
     line-height: 17px;
     color: #ffffff;
     background-color: #32425c;
-    border-bottom: 5px solid #293449;
+    border-bottom: 4px solid #293449;
 }
 .nav-menu-list {
     display: flex;
@@ -1658,16 +1658,18 @@ input[type="radio"] {
     background-color: #ee3643;
 }
 /* Модальные окна */
-.popup {
-    display: none;
-}
-.popup-show {
-    z-index: 100;
-    display: block;
+@keyframes openscale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
     /* каталог */
 .popup-catalog {
     position: fixed;
+    display: none;
     width: 620px;
     top: 50%;
     left: 50%;
@@ -1724,11 +1726,12 @@ input[type="radio"] {
     /* главная страница */
 .popup-feedback {
     position: fixed;
+    display: none;
     width: 620px;
     top: 50%;
     left: 50%;
     margin-left: -310px;
-    margin-top: -150px;
+    margin-top: -210px;
     background-color: #ffffff;
     border-top: 5px solid #ee3643;
 }
@@ -1775,6 +1778,12 @@ input[type="radio"] {
     width: 100%;
     padding: 10px 0;
     text-transform: uppercase;
+}
+.popup-show {
+    z-index: 50;
+    display: block;
+    animation-name: openscale;
+    animation-duration: 0.8s;
 }
 /* Для IE 11*/
 @media all and (-ms-high-contrast:none) {

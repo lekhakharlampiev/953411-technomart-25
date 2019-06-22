@@ -5,7 +5,7 @@
         <title>Каталог товаров</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="main-header">
@@ -471,18 +471,16 @@
                 </div>    
             </section>
         </footer>
-        <section class="popup js-popup-catalog">
-            <div class="popup-catalog">
-                <button type="button" class="button close-popup js-close-popup-catalog" title="Закрыть">закрыть</button>
-                <div class="popup-catalog-info">
-                    <img src="img/icon-mark.svg" alt="Успешно" width="50" height="50">
-                    <span>Товар добавлен в корзину!</span>
-                </div>
-                <div class="popup-catalog-buttons">
-                    <a href="#" class="button ordering">ОФОРМИТЬ ЗАКАЗ</a>
-                    <button type="button" class="button return-shopping js-return-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-                </div>    
+        <section class="popup-catalog js-popup-catalog">
+            <button type="button" class="button close-popup js-close-popup-catalog" title="Закрыть">закрыть</button>
+            <div class="popup-catalog-info">
+                <img src="img/icon-mark.svg" alt="Успешно" width="50" height="50">
+                <span>Товар добавлен в корзину!</span>
             </div>
+            <div class="popup-catalog-buttons">
+                <a href="#" class="button ordering">ОФОРМИТЬ ЗАКАЗ</a>
+                <button type="button" class="button return-shopping js-return-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+            </div>    
         </section>
         <script type="text/javascript" src="js/index-min.js"></script>    
     </body>
