@@ -5,7 +5,7 @@
         <title>Техномарт</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="main-header">
@@ -429,50 +429,46 @@
                 </div>    
             </section>
         </footer>
-        <section class="popup js-popup-feedback">
-            <div class="popup-feedback">
-                <button type="button" class="button close-popup js-close-popup-feedback" title="Закрыть">закрыть</button>
-                <form action="#" method="post" class="popup-feedback-form">
-                    <div class="input-container">
-                        <div class="user-data">
-                            <div class="user-name">
-                                <label for="username">
-                                    Ваше имя:
-                                </label>
-                                <input type="text" name="username" id="username" placeholder="Имя Фамилия" required>
-                            </div>
-                            <div class="user-email">    
-                                <label for="usermail">
-                                    Ваш e-mail:
-                                </label>
-                                <input type="email" name="usermail" id="usermail" placeholder="email@example.com" required>
-                            </div>    
-                        </div>
-                        <div class="user-comment">
-                            <label for="comment">
-                                Текст письма:
+        <section class="popup-feedback js-popup-feedback">
+            <button type="button" class="button close-popup js-close-popup-feedback" title="Закрыть">закрыть</button>
+            <form action="#" method="post" class="popup-feedback-form">
+                <div class="input-container">
+                    <div class="user-data">
+                        <div class="user-name">
+                            <label for="username">
+                                Ваше имя:
                             </label>
-                            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+                            <input type="text" name="username" id="username" placeholder="Имя Фамилия" required>
                         </div>
-                    </div>    
-                    <div class="button-submit-form">
-                        <input type="submit" class="button submit-form" value="отправить">
+                        <div class="user-email">    
+                            <label for="usermail">
+                                Ваш e-mail:
+                            </label>
+                            <input type="email" name="usermail" id="usermail" placeholder="email@example.com" required>
+                        </div>    
                     </div>
-                </form>
-            </div>
-        </section>
-        <section class="popup js-popup-catalog">
-            <div class="popup-catalog">
-                <button type="button" class="button close-popup js-close-popup-catalog" title="Закрыть">закрыть</button>
-                <div class="popup-catalog-info">
-                    <img src="img/icon-mark.svg" alt="Успешно" width="50" height="50">
-                    <span>Товар добавлен в корзину!</span>
-                </div>
-                <div class="popup-catalog-buttons">
-                    <a href="#" class="button ordering">ОФОРМИТЬ ЗАКАЗ</a>
-                    <button type="button" class="button return-shopping js-return-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+                    <div class="user-comment">
+                        <label for="comment">
+                            Текст письма:
+                        </label>
+                        <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+                    </div>
                 </div>    
+                <div class="button-submit-form">
+                    <input type="submit" class="button submit-form" value="отправить">
+                </div>
+            </form>
+        </section>
+        <section class="popup-catalog js-popup-catalog">
+            <button type="button" class="button close-popup js-close-popup-catalog" title="Закрыть">закрыть</button>
+            <div class="popup-catalog-info">
+                <img src="img/icon-mark.svg" alt="Успешно" width="50" height="50">
+                <span>Товар добавлен в корзину!</span>
             </div>
+            <div class="popup-catalog-buttons">
+                <a href="#" class="button ordering">ОФОРМИТЬ ЗАКАЗ</a>
+                <button type="button" class="button return-shopping js-return-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+            </div>    
         </section>
         <script type="text/javascript" src="js/index-min.js"></script>       
     </body>
